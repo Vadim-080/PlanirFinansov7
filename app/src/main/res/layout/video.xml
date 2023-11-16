@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CV24"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nadpRazvl_view"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="ВИДЕО"
+        android:textColor="@color/CV1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/Menu"
+        android:layout_width="87dp"
+        android:layout_height="66dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV24"
+        android:gravity="center"
+        android:onClick="clickMenu"
+        android:src="@drawable/menu_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/Vk"
+        android:layout_width="310dp"
+        android:layout_height="97dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickVK"
+        android:src="@drawable/vest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <ImageButton
+        android:id="@+id/yParik"
+        android:layout_width="192dp"
+        android:layout_height="119dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickVestnik"
+        android:src="@drawable/yparik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <ImageButton
+        android:id="@+id/forum"
+        android:layout_width="116dp"
+        android:layout_height="119dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickForum"
+        android:src="@drawable/forum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <ImageButton
+        android:id="@+id/propar"
+        android:layout_width="90dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickPropar"
+        android:src="@drawable/propar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageButton
+        android:id="@+id/magaz1"
+        android:layout_width="90dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickMagaz1"
+        android:src="@drawable/magaz1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageButton
+        android:id="@+id/ist1"
+        android:layout_width="90dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickIst1"
+        android:src="@drawable/ist1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageButton
+        android:id="@+id/tv"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickTv"
+        android:src="@drawable/tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <ImageButton
+        android:id="@+id/vid1"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickVid1"
+        android:src="@drawable/vid1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <ImageButton
+        android:id="@+id/vid2"
+        android:layout_width="263dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
+        android:onClick="clickVid2"
+        android:src="@drawable/vid2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <ImageButton
+        android:id="@+id/nazadD5"
+        android:layout_width="68dp"
+        android:layout_height="63dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV24"
+        android:gravity="center"
+
+        android:src="@drawable/video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/nazadD6"
+        android:layout_width="68dp"
+        android:layout_height="63dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV24"
+        android:gravity="center"
+
+        android:src="@drawable/video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/buVixod"
+        android:layout_width="63dp"
+        android:layout_height="75dp"
+
+        android:backgroundTint="@color/CV24"
+        android:gravity="center"
+        android:onClick="clickVixod"
+        android:src="@drawable/vixod"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

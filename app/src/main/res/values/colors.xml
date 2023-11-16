@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="CV1">#AA00FF</color>
+    <color name="CV2">#FFED92</color>
+    <color name="CV3">#91F1FF</color>
+    <color name="CV4">#F10971</color>
+    <color name="CV5">#06FB6C</color>
+    <color name="CV6">#0328FB</color>
+    <color name="CV7">#FF6D00</color>
+    <color name="CV8">#037E18</color>
+    <color name="CV9">#E3086B</color>
+    <color name="CV10">#76ECFD</color>
+    <color name="CV11">#53E5FA</color>
+    <color name="CV12">#014A0D</color>
+    <color name="CV13">#FFD704</color>
+    <color name="CV14">#3CFF8C</color>
+    <color name="CV15">#FFB781</color>
+    <color name="CV16">#E5AFFF</color>
+    <color name="CV17">#FFF5C1</color>
+    <color name="CV18">#B0F1FA</color>
+    <color name="CV19">#E2A9FF</color>
+    <color name="CV20">#C3A902</color>
+    <color name="CV21">#A9FDCD</color>
+    <color name="CV22">#FDC1DD</color>
+    <color name="CV23">#FDF4BE</color>
+    <color name="CV24">#9DB6FB</color>
+    <color name="CV25">#E6FCA6</color>
+    <color name="CV26">#D4E1AF</color>
+    <color name="CV27">#E1CBFF</color>
+    <color name="CV28">#E5FBA5</color>
+    <color name="CV29">#FF63A9</color>
+    <color name="CV30">#01CA22</color>
+    <color name="CV31">#06F32C</color>
+    <color name="CV32">#FF0074</color>
+    <color name="CV33">#9FFF63</color>
+    <color name="CV34">#FFA200</color>
+    <color name="CV35">#FDE567</color>
+    <color name="CV36">#304FFE</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#FF91F1FF</color>
+    <color name="red">#C51162</color>
+
+</resources>

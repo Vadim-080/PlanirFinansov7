@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CalendarViewStyle" parent="@android:style/Widget.CalendarView">
+        <item name="android:typeface">sans</item>
+
+    </style>
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/CV33</item>  // цвет круглешка
+      <!--  <item name="colorPrimary">@color/CV14</item>-->
+        <item name="android:textColorPrimary">@color/CV34</item>  // цвет месяца и года
+        <item name="android:textSize">42dp</item>  //  размер чисел
+
+
+       <!-- <item name="android:typeface">monospace</item>-->
+
+      <!--  <item name="android:textSize">25dp</item>-->
+        <!--<item name="android:textSize">18dp</item>-->
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/CV32</item>   // цвет чисел
+        <item name="android:weekNumberColor">@color/CV14</item>
+        <item name="android:textSize">21dp</item>  //  размер чисел
+
+      <!--  <item name="android:textStyle">bold</item>-->
+
+      <!--  <item name="android:typeface">monospace</item>-->
+
+      <!--  <item name="android:headerYearTextAppearance">@color/CV4</item>-->
+
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/CV31</item>  // цвет дней недели
+        <item name="android:textSize">25dp</item>   //  размер дней недели
+      <!--  <item name="android:textStyle">bold</item>-->
+
+       <!-- <item name="android:typeface">monospace</item>-->
+
+    </style>
+
+
+    <style name="CalenderViewCustom." parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/CV1</item>  // цвет дней недели
+      <!--  <item name="android:textSize">18dp</item>-->
+
+      <!--  <item name="android:typeface">monospace</item>-->
+
+
+    </style>
+
+
+
+
+
+
+</resources>

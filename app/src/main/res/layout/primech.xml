@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CV25"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nadpPrim_view"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="ЗАМЕТКИ"
+
+        android:textColor="@color/CV1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/buMenu"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/CV25"
+        android:gravity="center"
+        android:onClick="clickMenu"
+        android:src="@drawable/menu_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/datePrim_view"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text=""
+        android:textColor="@color/CV4"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <ImageButton
+        android:id="@+id/buStatiatikaD"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/CV25"
+        android:onClick="clickStatistikaPr"
+        android:src="@drawable/statistics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/buKalendPr"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV25"
+        android:gravity="center"
+        android:onClick="clickKalendPr"
+        android:src="@drawable/nazad1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/MonthNazad_view"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV25"
+        android:gravity="center"
+        android:onClick="clickMonthNazad"
+        android:src="@drawable/monthnazad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.870" />
+
+    <ImageButton
+        android:id="@+id/MonthVpered_view"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV25"
+        android:gravity="center"
+        android:onClick="clickMonthVpered"
+        android:src="@drawable/monthvpered"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.750" />
+
+    <EditText
+        android:id="@+id/textPrim_view"
+
+        android:layout_width="329dp"
+        android:layout_height="430dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittextstyle"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="твой Зайка                          тебя очень сильно           ЛЮБИТ                                          💖"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5pt"
+        android:paddingTop="5pt"
+        android:paddingEnd="5pt"
+        android:paddingRight="5pt"
+        android:textColor="@color/CV1"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <ImageButton
+        android:id="@+id/buSochranitPrim"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV25"
+        android:gravity="center"
+        android:onClick="clickSochranitPrim"
+
+        android:paddingLeft="2pt"
+        android:paddingRight="2pt"
+
+        android:src="@drawable/save1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
