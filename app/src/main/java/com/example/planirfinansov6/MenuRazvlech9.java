@@ -1,11 +1,8 @@
 package com.example.planirfinansov6;
 
-/*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -16,9 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuRazvlech9 extends AppCompatActivity {
 
-    TextView nadpRazvl, nadp_1, nadp_2, nadp_3, nadp_4, nadp_5, nadp_6, nadp_Itog;
+    TextView nadpRazvl, nadp_1, nadp_2, nadp_3;
     Typeface TypefaceRazvl;   // ШРИФТ
-    TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7, tv8;
+    TextView tv1, tv2, tv3, tv7;
     Animation anim;
 
     @SuppressLint("MissingInflatedId")
@@ -49,7 +46,6 @@ public class MenuRazvlech9 extends AppCompatActivity {
         anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim16);
         tv3 = (TextView) findViewById(R.id.nadp_3);
         tv3.startAnimation(anim);
-
     }
 
     public void clickVideo(View v) {

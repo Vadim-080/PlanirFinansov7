@@ -7,7 +7,11 @@
 
     <style name="Button.White" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@android:color/black</item>
+
+
     </style>
+
+
 
     <style name="Theme.PlanirFinansov6" parent="Base.Theme.PlanirFinansov6" />
 </resources>

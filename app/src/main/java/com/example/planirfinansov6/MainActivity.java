@@ -6,25 +6,30 @@ package com.example.planirfinansov6;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.AlarmManager;
 import android.app.IntentService;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -35,6 +40,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
+
+
+
+
 
     private static final int NOTIFICATION_REMINDER = 1;
     public static int Key, KeyDR, KeyDP; // Key - промежуточн ключ = год-месяц-дата,    KeyDR - ключ Доход с Работы = дата,    KeyDP - ключ Доход с Продаж = 1дата.
@@ -47,39 +56,50 @@ public class MainActivity extends AppCompatActivity {
     public static double KeyR_1, KeyR_2, KeyR_3, KeyR_4;
     public static int RassmatrivaemGod;
     public static int summaDoxodZaMonth, summaRasxodZaMonth;
-    Typeface TypefaceMainAct;   // ШРИФТ
-    TextView tv1, tv2, tv3, tv4, tv9;
-    TextView citat;
-    Animation anim;
-    String Citata;
     int cvet;  // цвет вывода слов
     boolean time = true;
     public static int izmenMount = 0;
     private Context context;
-
+    Typeface TypefaceMainAct;   // ШРИФТ
+    TextView tv1, tv2, tv3, tv4;
+    TextView citat;
+    Animation anim;
+    String Citata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Date segodnDate1 = new Date();
-        SimpleDateFormat formatter1 = new SimpleDateFormat("yyyy");
-        RassmatrivaemGod = Integer.parseInt(formatter1.format(segodnDate1));
+
+        // https://tech.kknlive.com/2018/12/animated-splash-screen-in-android-studio.html - Анимация застваки
+
+
+       /* try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
+
+
+       // https://habr.com/ru/articles/648535/    - Анимация застваки
+
 
         citat = (TextView) findViewById(R.id.textView2);
 
         viborShrifta();  // ШРИФТ
+        viborCveta();
+        citat.setTextColor(cvet);
+        viborCitat();
+        citat.setText("" + Citata);
+
+        Date segodnDate1 = new Date();
+        SimpleDateFormat formatter1 = new SimpleDateFormat("yyyy");
+        RassmatrivaemGod = Integer.parseInt(formatter1.format(segodnDate1));
 
         anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim1);
         tv1 = (TextView) findViewById(R.id.textView1);
         tv1.startAnimation(anim);
-
-        viborCveta();
-        citat.setTextColor(cvet);
-
-        viborCitat();
-        citat.setText("" + Citata);
 
         String timeStamp = new SimpleDateFormat("HH").format(Calendar.getInstance().getTime());
         byte q = Byte.parseByte(timeStamp);
@@ -101,12 +121,6 @@ public class MainActivity extends AppCompatActivity {
             tv3.startAnimation(anim);
             tv3.setText("ночью надо спать поцелуй своего Зайку");
 
-           /* anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim9);
-            tv9 = (TextView) findViewById(R.id.textView4);
-            tv9.setTypeface(TypefaceMainAct);
-            tv9.startAnimation(anim);
-            tv9.setText("поцелуй своего Зайку");*/
-
             anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim4);
             tv4 = (TextView) findViewById(R.id.buNachnem);
             tv4.setTypeface(TypefaceMainAct);
@@ -122,10 +136,8 @@ public class MainActivity extends AppCompatActivity {
 
             TextView b2 = (TextView) findViewById(R.id.textView2);
             b2.setEnabled(false);
-
             TextView b3 = (TextView) findViewById(R.id.textView3);
             b3.setEnabled(false);
-
             return;
         }
 
@@ -144,10 +156,8 @@ public class MainActivity extends AppCompatActivity {
         tv4.setTypeface(TypefaceMainAct);
         tv4.startAnimation(anim);
 
-       /* anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim9);
-        tv9 = (TextView) findViewById(R.id.textView4);
-        tv9.setTypeface(TypefaceMainAct);
-        tv9.startAnimation(anim);*/
+
+
 
 // НАПОМИНАНИЕ РАЗ В СУТКИ взято из https://stackoverflow.com/questions/34517520/how-to-give-notifications-on-android-on-specific-time
 
@@ -171,6 +181,16 @@ public class MainActivity extends AppCompatActivity {
 
         // https://developer.alexanderklimov.ru/android/notification.php?ysclid=loigwef9l5430015313
     }
+
+
+
+
+
+
+
+
+
+
 
 
     public void viborCveta() {
@@ -252,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viborCitat() {
-        byte b = (byte) (Math.random() * 71); // Случайное число
+        byte b = (byte) (Math.random() * 84); // Случайное число
 
         if (b == 0) {
             Citata = "Будьте свободны от стресса и верьте в мастерство и волшебство своих парикмахеров";
@@ -468,6 +488,45 @@ public class MainActivity extends AppCompatActivity {
         }
         if (b == 70) {
             Citata = "«Парикмахеры» - замечательный человек, трогающий больше сердец, чем волос";
+        }
+        if (b == 71) {
+            Citata = "«Дешевые стрижки не годятся! хорошие стрижки не из дешевых";
+        }
+        if (b == 72) {
+            Citata = "«За каждой красивой женщиной стоит парикмахер, который ее любит";
+        }
+        if (b == 73) {
+            Citata = "«Ты самый яркий момент в моей жизни";
+        }
+        if (b == 74) {
+            Citata = "«Красота исходит изнутри. Внутри парикмахерской";
+        }
+        if (b == 75) {
+            Citata = "«Хорошие волосы не случаются. Это происходит по предварительной записи";
+        }
+        if (b == 76) {
+            Citata = "«Я думаю, что самое важное, что может иметь женщина помимо таланта, - это, конечно, парикмахер";
+        }
+        if (b == 77) {
+            Citata = "«Жизнь прекраснее, когда ты встречаешь правильного парикмахера";
+        }
+        if (b == 78) {
+            Citata = "«Тебе не нужно быть кинозвездой, чтобы я уложила твою прическу, когда ты сидишь в моем кресле, ты моя кинозвезда";
+        }
+        if (b == 79) {
+            Citata = "«Хороший парикмахер всегда поможет вам в острой необходимости";
+        }
+        if (b == 80) {
+            Citata = "«Парикмахеры похожи на пластических хирургов, вооруженных только ножницами и лаком для волос";
+        }
+        if (b == 81) {
+            Citata = "«Хорошие прически могут случиться случайно, но вы можете добиться этого, записавшись на прием к парикмахеру";
+        }
+        if (b == 82) {
+            Citata = "«Самое близкое, что вы получите к волшебнику, - это парикмахер в дни плохой прически";
+        }
+        if (b == 83) {
+            Citata = "«Вы хотите повысить свою уверенность в себе? Убедитесь, что вы нашли подходящего парикмахера, потому что он может сделать намного лучше, чем терапевт";
         }
     }
 }

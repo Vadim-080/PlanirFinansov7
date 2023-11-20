@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:autoSizeTextType="uniform"
-    android:background="@color/CV3"
+    android:background="@drawable/polekalen"
     tools:context=".MainActivity">
 
     <TextView
@@ -159,7 +159,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
-        android:background="@drawable/polekal"
+        android:background="@drawable/poledox"
         android:onClick="clickItog"
         android:gravity="center"
         android:paddingLeft="2pt"
@@ -185,7 +185,7 @@
         android:src="@drawable/strel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -202,7 +202,7 @@
         android:src="@drawable/doxod3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -212,7 +212,7 @@
         android:id="@+id/buMenu2"
         android:layout_width="52dp"
         android:layout_height="58dp"
-        android:backgroundTint="@color/CV3"
+        android:backgroundTint="@color/CV39"
         android:gravity="center"
         android:onClick="clickMenu"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -248,7 +248,7 @@
         android:layout_width="94dp"
         android:layout_height="81dp"
 
-        android:backgroundTint="@color/CV3"
+        android:backgroundTint="@color/CV40"
 
         android:onClick="clickStatistika"
         android:src="@drawable/statistics"
@@ -267,7 +267,7 @@
         android:layout_width="63dp"
         android:layout_height="75dp"
 
-        android:backgroundTint="@color/CV3"
+        android:backgroundTint="@color/CV40"
         android:gravity="center"
         android:onClick="clickVixod"
         android:src="@drawable/vixod"
