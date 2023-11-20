@@ -10,17 +10,17 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Splash extends AppCompatActivity {
+public class Zastavka0 extends AppCompatActivity {
     private TextView tv;
     private ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.zastavka);
         tv = (TextView) findViewById(R.id.tv);
         iv = (ImageView) findViewById(R.id.iv);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.zastav_anim1);
         tv.startAnimation(myanim);
         iv.startAnimation(myanim);
         final Intent i = new Intent(this, MainActivity.class);
