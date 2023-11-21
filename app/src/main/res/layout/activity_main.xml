@@ -30,8 +30,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="360dp"
-        android:layout_height="497dp"
+        android:layout_width="363dp"
+        android:layout_height="570dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/stylefraz"
         android:gravity="center"
@@ -47,28 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.294" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="364dp"
-        android:layout_height="61dp"
-        android:autoSizeTextType="uniform"
-        android:gravity="center"
-        android:onClick="clickNachnem"
-        android:paddingLeft="2dp"
-        android:paddingTop="2dp"
-        android:paddingRight="2dp"
-        android:paddingBottom="2dp"
-        android:text="Я ТВОЙ ФИНАНСИСТ"
-        android:textColor="@color/CV1"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867" />
 
     <ImageButton
         android:id="@+id/Menu"

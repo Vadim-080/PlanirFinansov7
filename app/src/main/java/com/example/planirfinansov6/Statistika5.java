@@ -28,7 +28,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Statistika5 extends AppCompatActivity {
 
@@ -285,6 +287,12 @@ public class Statistika5 extends AppCompatActivity {
             znachenSrednDoxod.setTypeface(TypefaceStatist);   // ШРИФТ
             znachenSrednDoxod.setText("" + sredn1);
         }
+
+
+
+
+
+
     }
 
     public void clickNazadSt(View v) {

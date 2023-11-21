@@ -72,17 +72,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        // https://tech.kknlive.com/2018/12/animated-splash-screen-in-android-studio.html - Анимация застваки
 
 
-       /* try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }*/
 
-
-       // https://habr.com/ru/articles/648535/    - Анимация застваки
 
 
         citat = (TextView) findViewById(R.id.textView2);
@@ -116,10 +108,10 @@ public class MainActivity extends AppCompatActivity {
         if (q >= 23 || q < 5) {
             tv1.setText("ДОБРОЙ НОЧИ");
             anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim3);
-            tv3 = (TextView) findViewById(R.id.textView3);
+            tv3 = (TextView) findViewById(R.id.textView2);
             tv3.setTypeface(TypefaceMainAct);
             tv3.startAnimation(anim);
-            tv3.setText("ночью надо спать поцелуй своего Зайку");
+            tv3.setText("НОЧЬЮ \n НАДО СПАТЬ \n ПОЦЕЛУЙ \n И ОБНИМИ \n СВОЕГО ЗАЙКУ \n И ИДИ СПАТЬ");
 
             anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim4);
             tv4 = (TextView) findViewById(R.id.buNachnem);
@@ -136,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
 
             TextView b2 = (TextView) findViewById(R.id.textView2);
             b2.setEnabled(false);
-            TextView b3 = (TextView) findViewById(R.id.textView3);
-            b3.setEnabled(false);
+            /*TextView b3 = (TextView) findViewById(R.id.textView3);
+            b3.setEnabled(false);*/
             return;
         }
 
@@ -146,10 +138,10 @@ public class MainActivity extends AppCompatActivity {
         tv2.setTypeface(TypefaceMainAct);
         tv2.startAnimation(anim);
 
-        anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim3);
+       /* anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim3);
         tv3 = (TextView) findViewById(R.id.textView3);
         tv3.setTypeface(TypefaceMainAct);
-        tv3.startAnimation(anim);
+        tv3.startAnimation(anim);*/
 
         anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim4);
         tv4 = (TextView) findViewById(R.id.buNachnem);

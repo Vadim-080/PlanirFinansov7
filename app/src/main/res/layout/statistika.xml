@@ -48,7 +48,7 @@
 
     <TextView
         android:id="@+id/month_1_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -62,7 +62,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -112,7 +112,7 @@
 
     <TextView
         android:id="@+id/summa_2_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -125,7 +125,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -133,7 +133,7 @@
 
     <TextView
         android:id="@+id/summa_3_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -146,7 +146,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -154,7 +154,7 @@
 
     <TextView
         android:id="@+id/summa_4_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -167,7 +167,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -175,7 +175,7 @@
 
     <TextView
         android:id="@+id/summa_5_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -188,7 +188,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -196,7 +196,7 @@
 
     <TextView
         android:id="@+id/summa_6_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -209,7 +209,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.910"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -217,7 +217,7 @@
 
     <TextView
         android:id="@+id/summa_7_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -230,7 +230,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -238,7 +238,7 @@
 
     <TextView
         android:id="@+id/summa_8_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -251,7 +251,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -259,7 +259,7 @@
 
     <TextView
         android:id="@+id/summa_9_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -272,7 +272,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -280,7 +280,7 @@
 
     <TextView
         android:id="@+id/summa_10_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -293,7 +293,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -301,7 +301,7 @@
 
     <TextView
         android:id="@+id/summa_11_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -314,7 +314,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -322,7 +322,7 @@
 
     <TextView
         android:id="@+id/summa_12_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -335,7 +335,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -343,7 +343,7 @@
 
     <TextView
         android:id="@+id/summa_1_view"
-        android:layout_width="145dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -356,7 +356,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -364,7 +364,7 @@
 
     <TextView
         android:id="@+id/month_2_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -378,7 +378,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -386,7 +386,7 @@
 
     <TextView
         android:id="@+id/month_3_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -400,7 +400,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -408,7 +408,7 @@
 
     <TextView
         android:id="@+id/month_5_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -422,7 +422,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -430,7 +430,7 @@
 
     <TextView
         android:id="@+id/month_6_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -444,7 +444,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -452,7 +452,7 @@
 
     <TextView
         android:id="@+id/month_7_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -466,7 +466,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -474,7 +474,7 @@
 
     <TextView
         android:id="@+id/month_8_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -488,7 +488,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -496,7 +496,7 @@
 
     <TextView
         android:id="@+id/month_9_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -510,7 +510,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -518,7 +518,7 @@
 
     <TextView
         android:id="@+id/month_10_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -532,7 +532,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -540,7 +540,7 @@
 
     <TextView
         android:id="@+id/month_11_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -554,7 +554,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -562,7 +562,7 @@
 
     <TextView
         android:id="@+id/month_12_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -576,7 +576,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -584,7 +584,7 @@
 
     <TextView
         android:id="@+id/month_4_view"
-        android:layout_width="145dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -598,7 +598,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
