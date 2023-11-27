@@ -3,27 +3,21 @@ package com.example.planirfinansov6;
 import static com.example.planirfinansov6.Kalendar2.APP_PREFERENCES;
 import static com.example.planirfinansov6.Kalendar2.mSettings;
 import static com.example.planirfinansov6.Kalendar2.monthPrim;
-import static com.example.planirfinansov6.MainActivity.Key;
 import static com.example.planirfinansov6.MainActivity.KeyDTolko;
-import static com.example.planirfinansov6.MainActivity.KeyMonth;
 import static com.example.planirfinansov6.MainActivity.KeyMonthD;
 import static com.example.planirfinansov6.MainActivity.KeyMonthR;
 import static com.example.planirfinansov6.MainActivity.KeyPrimMonth;
 import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
 import static com.example.planirfinansov6.MainActivity.izmenMount;
-import static com.example.planirfinansov6.MainActivity.summaDoxodZaMonth;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -78,6 +72,12 @@ public class Itog7 extends AppCompatActivity {
             ImageButton a1 = findViewById(R.id.MonthVperedIt_view);   // ПРОЗРАЧНОСТЬ КНОПКИ
             a1.setAlpha(1f);
             a1.animate().alpha(0.2f).setDuration(1500);
+
+            TextView b2 = (TextView) findViewById(R.id.nadpVper);
+            b2.setEnabled(false);
+            TextView a2 = findViewById(R.id.nadpVper);   // ПРОЗРАЧНОСТЬ КНОПКИ
+            a2.setAlpha(1f);
+            a2.animate().alpha(0.0f).setDuration(1500);
         }
 
         if (monthPrim==null) {

@@ -180,6 +180,12 @@ public class Primech6 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void clickKalend(View v) {
+
+        Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
+        startActivity(intent);
+    }
+
     public void clickMonthVpered(View v) {
 
         izmenMount = (-1);

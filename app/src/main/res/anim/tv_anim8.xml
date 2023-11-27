@@ -4,7 +4,7 @@
     android:fromAlpha="0.0"
     android:toAlpha="1.0">
     <scale
-        android:duration="8000"
+        android:duration="4000"
         android:fromXScale="0.1"
         android:fromYScale="0.1"
         android:pivotX="50%"

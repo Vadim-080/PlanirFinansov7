@@ -1,12 +1,10 @@
 package com.example.planirfinansov6;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -51,7 +49,7 @@ public class Zastavka0 extends AppCompatActivity {
         Thread timer = new Thread() {
             public void run() {
                 try {
-                    sleep(8500);
+                    sleep(6000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {

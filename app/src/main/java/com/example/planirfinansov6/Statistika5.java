@@ -2,14 +2,8 @@ package com.example.planirfinansov6;
 
 import static com.example.planirfinansov6.Kalendar2.APP_PREFERENCES;
 import static com.example.planirfinansov6.Kalendar2.mSettings;
-import static com.example.planirfinansov6.Kalendar2.summaDoxodObchEtotDay;
-/*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
-import static com.example.planirfinansov6.MainActivity.KeyMonth;
 import static com.example.planirfinansov6.MainActivity.KeyMonthD;
 import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
-import static com.example.planirfinansov6.MainActivity.summaDoxodZaMonth;
-
-import static java.lang.String.format;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,19 +12,13 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Statistika5 extends AppCompatActivity {
 
@@ -53,6 +41,11 @@ public class Statistika5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.statistika);
+
+// https://otosection.com/creating-a-simple-graph-in-android-studio-with-graphview/  -  ВИДЕО ГРАФИК
+
+
+
 
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE); // Внутри метода onCreate() вы инициализируете переменную  mSettings
 
@@ -104,6 +97,12 @@ public class Statistika5 extends AppCompatActivity {
             ImageButton a1 = findViewById(R.id.GodVpered_view);   // ПРОЗРАЧНОСТЬ КНОПКИ
             a1.setAlpha(1f);
             a1.animate().alpha(0.2f).setDuration(1500);
+
+            TextView b2 = (TextView) findViewById(R.id.nadpVper);
+            b2.setEnabled(false);
+            TextView a2 = findViewById(R.id.nadpVper);   // ПРОЗРАЧНОСТЬ КНОПКИ
+            a2.setAlpha(1f);
+            a2.animate().alpha(0.0f).setDuration(1500);
         }
 
         viborShrifta();
@@ -295,7 +294,7 @@ public class Statistika5 extends AppCompatActivity {
 
     }
 
-    public void clickNazadSt(View v) {
+    public void clickKalend (View v) {
 
         KeyMonthD = KeyPromDlyaVozvrata; // ВОЗВРАЩАЕТ НАЧАЛЬНОЕ ЗНАЧЕНИЕ KeyMonthD
       /*  vozvratnayaSVvodaData = false;*/

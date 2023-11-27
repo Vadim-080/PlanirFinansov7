@@ -2,6 +2,8 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:shareInterpolator="false" >
 
+
+
     <scale
         android:duration="1000"
         android:fillAfter="false"
@@ -35,5 +37,7 @@
             android:toDegrees="-1440"
             android:toYScale="1.0" />
     </set>
+
+
 
 </set>

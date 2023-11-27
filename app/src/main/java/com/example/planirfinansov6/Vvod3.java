@@ -1,10 +1,17 @@
 package com.example.planirfinansov6;
 
+import static com.example.planirfinansov6.Kalendar2.APP_PREFERENCES;
+import static com.example.planirfinansov6.Kalendar2.DateR;
+import static com.example.planirfinansov6.Kalendar2.DayR;
+import static com.example.planirfinansov6.Kalendar2.mSettings;
+import static com.example.planirfinansov6.Kalendar2.summaDoxodObchEtotDay;
+import static com.example.planirfinansov6.Kalendar2.vibranData;
 import static com.example.planirfinansov6.MainActivity.Key;
-import static com.example.planirfinansov6.MainActivity.KeyDR;
 import static com.example.planirfinansov6.MainActivity.KeyDP;
+import static com.example.planirfinansov6.MainActivity.KeyDR;
 import static com.example.planirfinansov6.MainActivity.KeyDTolko;
 import static com.example.planirfinansov6.MainActivity.KeyD_1;
+import static com.example.planirfinansov6.MainActivity.KeyD_11;
 import static com.example.planirfinansov6.MainActivity.KeyD_2;
 import static com.example.planirfinansov6.MainActivity.KeyD_3;
 import static com.example.planirfinansov6.MainActivity.KeyD_4;
@@ -13,7 +20,6 @@ import static com.example.planirfinansov6.MainActivity.KeyD_6;
 import static com.example.planirfinansov6.MainActivity.KeyD_7;
 import static com.example.planirfinansov6.MainActivity.KeyD_8;
 import static com.example.planirfinansov6.MainActivity.KeyD_9;
-import static com.example.planirfinansov6.MainActivity.KeyD_11;
 import static com.example.planirfinansov6.MainActivity.KeyMonth;
 import static com.example.planirfinansov6.MainActivity.KeyMonthD;
 import static com.example.planirfinansov6.MainActivity.KeyMonthR;
@@ -24,26 +30,14 @@ import static com.example.planirfinansov6.MainActivity.KeySumD;
 import static com.example.planirfinansov6.MainActivity.KeySumMonthRP;
 import static com.example.planirfinansov6.MainActivity.KeySumMonthRR;
 import static com.example.planirfinansov6.MainActivity.KeySumR;
-import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
 import static com.example.planirfinansov6.MainActivity.izmenMount;
 import static com.example.planirfinansov6.MainActivity.summaDoxodZaMonth;
-import static com.example.planirfinansov6.Kalendar2.APP_PREFERENCES;
-import static com.example.planirfinansov6.Kalendar2.DateR;
-import static com.example.planirfinansov6.Kalendar2.DayR;
-import static com.example.planirfinansov6.Kalendar2.summaDoxodObchEtotDay;
-
-
-import static com.example.planirfinansov6.Kalendar2.mSettings;
-/*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
-import static com.example.planirfinansov6.Kalendar2.vibranData;
-import static com.example.planirfinansov6.Kalendar2.vibranDataMonth;
 import static com.example.planirfinansov6.MainActivity.summaRasxodZaMonth;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -141,6 +135,12 @@ public class Vvod3 extends AppCompatActivity {
             ImageButton a1 = findViewById(R.id.MonthVperedDox_view);   // ПРОЗРАЧНОСТЬ КНОПКИ
             a1.setAlpha(1f);
             a1.animate().alpha(0.2f).setDuration(1500);
+
+            TextView b2 = (TextView) findViewById(R.id.nadpVper);
+            b2.setEnabled(false);
+            TextView a2 = findViewById(R.id.nadpVper);   // ПРОЗРАЧНОСТЬ КНОПКИ
+            a2.setAlpha(1f);
+            a2.animate().alpha(0.0f).setDuration(1500);
         }
 
         if (Kalendar2.proverka == true) {
@@ -415,7 +415,7 @@ public class Vvod3 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void clickNazadD(View v) {
+    public void clickKalend(View v) {
 
         /*  vozvratnayaSVvodaData = false;*/
         Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)

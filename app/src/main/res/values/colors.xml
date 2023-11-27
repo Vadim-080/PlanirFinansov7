@@ -43,11 +43,29 @@
     <color name="CV40">#4BE8FD</color>
     <color name="CV41">#EDCBFD</color>
     <color name="CV42">#00FF00</color>
-
+    <color name="CV43">#83FFB8</color>
+    <color name="CV44">#96FBC1</color>
+    <color name="CV45">#99FDC4</color>
+    <color name="CV46">#FFA6CF</color>
+    <color name="CV47">#FDACD1</color>
+    <color name="CV48">#FDB6D7</color>
+    <color name="CV49">#E1FD8F</color>
+    <color name="CV50">#EDFDBD</color>
+    <color name="CV51">#667DFD</color>
+    <color name="CV52">#88FCB9</color>
+    <color name="CV53">#90E1B2</color>
+    <color name="CV54">#97D6B1</color>
+    <color name="CV55">#6FEAFB</color>
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#FF91F1FF</color>
     <color name="red">#C51162</color>
+
+
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#009688</color>
+
 
 </resources>
