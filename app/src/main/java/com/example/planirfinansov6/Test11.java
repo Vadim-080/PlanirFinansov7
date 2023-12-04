@@ -1,7 +1,5 @@
 package com.example.planirfinansov6;
 
-/*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;

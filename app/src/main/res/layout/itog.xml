@@ -163,7 +163,7 @@
 
     <ImageButton
         android:id="@+id/buMenuIt"
-
+        android:background="@android:color/transparent"
         android:layout_width="52dp"
         android:layout_height="58dp"
         android:backgroundTint="@color/CV51"
@@ -206,7 +206,7 @@
         android:id="@+id/buStatiatikaIt"
         android:layout_width="75dp"
         android:layout_height="70dp"
-        android:backgroundTint="@color/CV43"
+        android:background="@android:color/transparent"
         android:onClick="clickStatistikaIt"
         android:src="@drawable/statist_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -242,7 +242,7 @@
         android:layout_width="75dp"
         android:layout_height="70dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV52"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickKalendIt"
         android:src="@drawable/calend_3_64"
@@ -252,7 +252,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/nadpKalen"
@@ -280,7 +280,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV53"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMonthNazadId"
         android:src="@drawable/caland_6_48"
@@ -317,7 +317,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV54"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMonthVperedId"
         android:src="@drawable/caland_7_48"

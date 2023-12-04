@@ -49,25 +49,21 @@ public class MenuRazvlech9 extends AppCompatActivity {
     }
 
     public void clickVideo(View v) {
-
         Intent intent = new Intent(this, RazvlVideo10.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
     public void clickObuch(View v) {
-
         Intent intent = new Intent(this, Obuch12.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
     public void clickTest(View v) {
-
         Intent intent = new Intent(this, Test11.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
     public void  clickMenu(View v) {
-
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }

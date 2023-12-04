@@ -3,6 +3,7 @@ package com.example.planirfinansov6;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.util.Log;
 
 public class MyReceiver extends BroadcastReceiver {
@@ -11,10 +12,16 @@ public class MyReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.d("Test", "RAN");
-        Intent intent1 = new Intent(context, MyNewIntentService.class);
-       /* context.startService(intent1);*/
+        Log.d("Test", "RAN");  // Ведет журнал событий
 
-        context.startForegroundService(intent1);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(new Intent(context, MyNewIntentService.class));
+        } else {
+            context.startService(new Intent(context, MyNewIntentService.class));
+        }
     }
 }
+
+
+

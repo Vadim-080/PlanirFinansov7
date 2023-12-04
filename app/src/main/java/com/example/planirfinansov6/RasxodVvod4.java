@@ -56,7 +56,6 @@ public class RasxodVvod4 extends AppCompatActivity {
 
     int month;
     int chislo;
-
     String DayViv;
     TextView dateR, dayR, rasxodR, rasxodP, summaRasxodDayR, summaRasxodDayP, summaRasxodObchDay, RasxodZaMonthR, RasxodZaMonthP, summaRasxodZaMonthObch;
     Animation anim;
@@ -259,7 +258,6 @@ public class RasxodVvod4 extends AppCompatActivity {
 
         summaRasxodObchEtotDay = summaRasxodEtotDayR + summaRasxodEtotDayP;
 
-
         DecimalFormat s3 = new DecimalFormat();
         DecimalFormatSymbols v3 = DecimalFormatSymbols.getInstance();
         v3.setGroupingSeparator(' '); //явно задаем символ разделителя тысяч
@@ -321,13 +319,12 @@ public class RasxodVvod4 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void clickVperedRasx (View v) throws ParseException {
+    public void clickVperedRasx(View v) throws ParseException {
 
         String Keyst = String.valueOf(Key);
 
         DateFormat df = new SimpleDateFormat("yyyyMMdd");
         Date startDate = df.parse(Keyst);
-
 
 
         SimpleDateFormat W1 = new SimpleDateFormat("yyyyMMdd");
@@ -339,21 +336,20 @@ public class RasxodVvod4 extends AppCompatActivity {
         String dte = W1.format(c.getTime()).toString();
 
         Key = Integer.parseInt(dte);
-      /*  Key();*/
 
         Date startDate2 = df.parse(dte);
 
         SimpleDateFormat W2 = new SimpleDateFormat("dd");
-        chislo =  Integer.parseInt(W2.format(startDate2));
+        chislo = Integer.parseInt(W2.format(startDate2));
 
         SimpleDateFormat W3 = new SimpleDateFormat("MM");
-        month =  Integer.parseInt(W3.format(startDate2));
+        month = Integer.parseInt(W3.format(startDate2));
 
         SimpleDateFormat formatter1 = new SimpleDateFormat("yyyyMM");
         KeyMonth = Integer.parseInt(formatter1.format(startDate2));
 
-        SimpleDateFormat W4 = new SimpleDateFormat("EEEE" , new Locale("ru"));
-        DayViv =  (W4.format(startDate2));
+        SimpleDateFormat W4 = new SimpleDateFormat("EEEE", new Locale("ru"));
+        DayViv = (W4.format(startDate2));
 
         Date();
 
@@ -379,25 +375,22 @@ public class RasxodVvod4 extends AppCompatActivity {
         String dte = W1.format(c.getTime()).toString();
 
         Key = Integer.parseInt(dte);
-      /*  Key();*/
 
         Date startDate2 = df.parse(dte);
 
         SimpleDateFormat W2 = new SimpleDateFormat("dd");
-        chislo =  Integer.parseInt(W2.format(startDate2));
+        chislo = Integer.parseInt(W2.format(startDate2));
 
         SimpleDateFormat W3 = new SimpleDateFormat("MM");
-        month =  Integer.parseInt(W3.format(startDate2));
+        month = Integer.parseInt(W3.format(startDate2));
 
         SimpleDateFormat formatter1 = new SimpleDateFormat("yyyyMM");
         KeyMonth = Integer.parseInt(formatter1.format(startDate2));
 
-        SimpleDateFormat W4 = new SimpleDateFormat("EEEE" , new Locale("ru"));
-        DayViv =  (W4.format(startDate2));
+        SimpleDateFormat W4 = new SimpleDateFormat("EEEE", new Locale("ru"));
+        DayViv = (W4.format(startDate2));
 
         Date();
-
-        /*   VsegoDoxod.setText("" + Key);*/
 
         final Context context = this;            // Переход на другой класс
         Intent intent = new Intent(context, RasxodVvod4.class);
@@ -406,7 +399,7 @@ public class RasxodVvod4 extends AppCompatActivity {
 
     public void Date() {
 
-        int q = month ;   // Добавьте 1 в месяц, потому что месяц индекс начинается с 0
+        int q = month;   // Добавьте 1 в месяц, потому что месяц индекс начинается с 0
         String month1 = null;
         switch (q) {
             case 1:
@@ -446,7 +439,6 @@ public class RasxodVvod4 extends AppCompatActivity {
                 month1 = "ДЕКАБРЯ";
                 break;
         }
-
         DateR = (chislo + "  " + month1);
         DayR = DayViv;
     }
@@ -609,7 +601,6 @@ public class RasxodVvod4 extends AppCompatActivity {
     public void clickItog(View v) {
 
         izmenMount = 0;
-
         Intent intent = new Intent(this, Itog7.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }

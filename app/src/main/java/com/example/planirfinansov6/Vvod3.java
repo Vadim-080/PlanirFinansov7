@@ -59,7 +59,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-
 public class Vvod3 extends AppCompatActivity {
 
     int promVvod;
@@ -159,8 +158,6 @@ public class Vvod3 extends AppCompatActivity {
                 tv7.startAnimation(anim);
                 showDialogKalend(null);  // диалог окно календарь
             }
-
-
         }
 
         date.setTypeface(TypefaceDoxod);   // ШРИФТ
@@ -230,9 +227,6 @@ public class Vvod3 extends AppCompatActivity {
         if (vvodD11 != 0) {
             vvodDoxodP5.setText("" + vvodD11);
         }
-
-        /*    doxodZaMont.setText("x" + Key);*/
-
     }
 
     public void showDialogKalend(View v) {    // Выводит диалоговое окно
@@ -303,7 +297,6 @@ public class Vvod3 extends AppCompatActivity {
         vvodD3 = c;
         vvodD4 = d;
         vvodD5 = f;
-
 
 // ДОХОД ПРОДАЖИ
         summaDoxodProd = "0";
@@ -417,7 +410,6 @@ public class Vvod3 extends AppCompatActivity {
 
     public void clickKalend(View v) {
 
-        /*  vozvratnayaSVvodaData = false;*/
         Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
@@ -586,14 +578,11 @@ public class Vvod3 extends AppCompatActivity {
             VsegoDoxod.setTypeface(TypefaceDoxod);   // ШРИФТ
             VsegoDoxod.setText("0");
         }
-
-        /*   VsegoDoxod.setText("" + KeySumD);*/
     }
 
     public void clickItog(View v) {
 
         izmenMount = 0;
-
         Intent intent = new Intent(this, Itog7.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
@@ -631,9 +620,6 @@ public class Vvod3 extends AppCompatActivity {
 
         Date();
 
-        /* onRestart();*/
-
-        /* final Context context = this;            // Переход на другой класс*/
         Intent intent = new Intent(this, Vvod3.class);
         startActivity(intent);
     }
@@ -654,7 +640,6 @@ public class Vvod3 extends AppCompatActivity {
         String dte = W1.format(c.getTime()).toString();
 
         Key = Integer.parseInt(dte);
-        /*   Key();*/
 
         Date startDate2 = df.parse(dte);
 
@@ -672,11 +657,6 @@ public class Vvod3 extends AppCompatActivity {
 
         Date();
 
-        /*  onRestart();*/
-
-        /*   VsegoDoxod.setText("" + Key);*/
-
-        /*  final Context context = this;            // Переход на другой класс*/
         Intent intent = new Intent(this, Vvod3.class);
         startActivity(intent);
     }
@@ -728,7 +708,6 @@ public class Vvod3 extends AppCompatActivity {
         DayR = DayViv;
     }
 
-
     public void Key() {
 
         KeyDR = Key;
@@ -746,7 +725,6 @@ public class Vvod3 extends AppCompatActivity {
         KeyPrimMonth = KeyMonth + 5000000;
         KeyDTolko = KeyMonth + 6000000;
     }
-
 
     public void viborShrifta() {
         byte a = (byte) (Math.random() * 5); // Случайное число от 0 до 4
@@ -780,20 +758,6 @@ public class Vvod3 extends AppCompatActivity {
         summaDoxodDayProd.setText("" + s1.format(t1));
 
     }
-
 }
 
 
- /*if (vibranDataMonth.before(segodnDate)) {    // ПРОВЕРКА ПРОШЕДШЕГО МЕСЯЦА
-                date.setTypeface(TypefaceDoxod);   // ШРИФТ
-                date.setText("ВЫ ВЫБРАЛИ ПРОШЕДШИЙ МЕСЯЦ");
-                anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim6);   // Плавное появление экрана "НЕ ТОТ МЕСЯЦ"
-                tv6 = (TextView) findViewById(R.id.date_view);
-                tv6.startAnimation(anim);
-                showDialogPredMonth(null);  // диалог ввод за предидущий месяц
-            }*/
-
-   /* public void showDialogPredMonth (View v) {    // Выводит диалоговое окно
-        DialogPredMonth dialog = new DialogPredMonth();
-        dialog.show(getSupportFragmentManager(), "custom");
-    }*/

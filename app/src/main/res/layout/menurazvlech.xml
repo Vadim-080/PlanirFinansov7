@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/CV28"
+    android:background="@drawable/stylemenrazvl"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -12,43 +12,45 @@
         android:layout_width="68dp"
         android:layout_height="63dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV28"
+        android:background="@android:color/transparent"
         android:gravity="center"
 
-        android:src="@drawable/razvl"
+        android:src="@drawable/razvl_1_72"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.006" />
 
     <ImageButton
         android:id="@+id/nazadD6"
         android:layout_width="68dp"
         android:layout_height="63dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV28"
+        android:background="@android:color/transparent"
         android:gravity="center"
 
-        android:src="@drawable/razvl"
+        android:src="@drawable/razvl_1_72"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.007" />
 
     <TextView
         android:id="@+id/nadpRazvl_view"
-        android:layout_width="240dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
         android:gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
         android:paddingLeft="2dp"
         android:paddingTop="2dp"
         android:paddingRight="2dp"
@@ -62,7 +64,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <TextView
         android:id="@+id/nadp_2"
@@ -132,10 +134,10 @@
         android:layout_width="89dp"
         android:layout_height="82dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV28"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickVideo"
-        android:src="@drawable/video"
+        android:src="@drawable/video_3_96"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -149,10 +151,10 @@
         android:layout_width="89dp"
         android:layout_height="82dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV28"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickObuch"
-        android:src="@drawable/obuch"
+        android:src="@drawable/obuch_4_96"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -166,10 +168,10 @@
         android:layout_width="89dp"
         android:layout_height="82dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV28"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickTest"
-        android:src="@drawable/test"
+        android:src="@drawable/test_1_96"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -180,31 +182,36 @@
 
     <ImageButton
         android:id="@+id/buVixod"
-        android:layout_width="63dp"
-        android:layout_height="75dp"
-        android:backgroundTint="@color/CV28"
-        android:gravity="center"
+
         android:onClick="clickVixod"
-        android:src="@drawable/vixod"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+
+        android:backgroundTint="@color/CV40"
+        android:gravity="center"
+
+        android:src="@drawable/restart_1_64"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.98" />
 
     <ImageButton
         android:id="@+id/buMenu"
-        android:layout_width="66dp"
-        android:layout_height="73dp"
-        android:backgroundTint="@color/CV28"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMenu"
-        android:src="@drawable/menu_4"
+        android:src="@drawable/menu_3_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -29,29 +29,5 @@ public class DialogKalend extends DialogFragment {
                     }
                 })
                 .create();
-
     }
-
 }
-
-// ВЫВОДИТ КАЛЕНДАРЬ
-
-   /* @NonNull
-    @Override
-    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-
-        final Calendar c = Calendar.getInstance();
-
-        int year = c.get(Calendar.YEAR);
-        int month = c.get(Calendar.MONTH);
-        int day = c.get(Calendar.DAY_OF_MONTH);
-
-        // Передаем контекст, слушатель для выбора даты и текущую дату
-        return new DatePickerDialog(getActivity(), listener, year, month, day);
-    }
-
-    // Слушатель для выбора даты, выводим на экран сообщение
-    private DatePickerDialog.OnDateSetListener listener = (view, year, month, dayOfMonth) -> {
-        String msg = "дата: " + dayOfMonth + "/" + (month + 1) + "/" + year;
-        Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
-    };*/

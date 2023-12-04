@@ -1,7 +1,5 @@
 package com.example.planirfinansov6;
 
-/*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -59,7 +57,6 @@ public class Obuch12 extends AppCompatActivity {
         anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim18);
         tv5 = (TextView) findViewById(R.id.nadp_5);
         tv5.startAnimation(anim);
-
     }
 
     public void click1 (View view) {

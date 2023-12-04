@@ -4,36 +4,21 @@
 
 package com.example.planirfinansov6;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-
 import android.app.AlarmManager;
-import android.app.IntentService;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.os.Handler;
-import android.preference.PreferenceManager;
-import android.provider.Settings;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.ViewFlipper;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -41,10 +26,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
-
-
+    private ViewPager2 viewPager2;
     private static final int NOTIFICATION_REMINDER = 1;
     public static int Key, KeyDR, KeyDP; // Key - промежуточн ключ = год-месяц-дата,    KeyDR - ключ Доход с Работы = дата,    KeyDP - ключ Доход с Продаж = 1дата.
     public static int KeyRR, KeyRP; // KeyRR - ключ Расход за Расходники для работы = 2дата,    KeyRP - ключ Расход за Продукцию на продажу = 3дата.
@@ -59,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     int cvet;  // цвет вывода слов
     boolean time = true;
     public static int izmenMount = 0;
-    private Context context;
     Typeface TypefaceMainAct;   // ШРИФТ
     TextView tv1, tv2, tv3, tv4;
     TextView citat;
@@ -70,12 +51,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-
-
-
 
         citat = (TextView) findViewById(R.id.textView2);
 
@@ -128,8 +103,6 @@ public class MainActivity extends AppCompatActivity {
 
             TextView b2 = (TextView) findViewById(R.id.textView2);
             b2.setEnabled(false);
-            /*TextView b3 = (TextView) findViewById(R.id.textView3);
-            b3.setEnabled(false);*/
             return;
         }
 
@@ -138,52 +111,32 @@ public class MainActivity extends AppCompatActivity {
         tv2.setTypeface(TypefaceMainAct);
         tv2.startAnimation(anim);
 
-       /* anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim3);
-        tv3 = (TextView) findViewById(R.id.textView3);
-        tv3.setTypeface(TypefaceMainAct);
-        tv3.startAnimation(anim);*/
-
         anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim4);
         tv4 = (TextView) findViewById(R.id.buNachnem);
         tv4.setTypeface(TypefaceMainAct);
         tv4.startAnimation(anim);
 
+        //  УВЕДОМЛЕНИЯ
+        // https://stackru.com/questions/54083216/sozdanie-uvedomleniya-android-kotoroe-povtoryaetsya-kazhdyij-den-v-opredelennoe?ysclid=lplngnkswq786714462
 
-
-
-// НАПОМИНАНИЕ РАЗ В СУТКИ взято из https://stackoverflow.com/questions/34517520/how-to-give-notifications-on-android-on-specific-time
-
-        /*Intent notifyIntent = new Intent(this, MyReceiver.class);
-
+        Intent notifyIntent = new Intent(this, MyReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, NOTIFICATION_REMINDER, notifyIntent, PendingIntent.FLAG_IMMUTABLE);
+
+        /*notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);*/    // Выбивает приложение на телефоне после заставки
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 13);
-        calendar.set(Calendar.MINUTE, 15);
-        calendar.set(Calendar.SECOND, 00);
+        calendar.set(Calendar.HOUR_OF_DAY, 19);
+        calendar.set(Calendar.MINUTE, 51);
+        calendar.set(Calendar.SECOND, 10);
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                AlarmManager.INTERVAL_DAY, pendingIntent);
-*/
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
 
-        // https://stackoverflow.com/questions/34517520/how-to-give-notifications-on-android-on-specific-time
-        /*  }*/
+        // ПЕРЕЛИСТЫВАНИЕ
+        //  https://translated.turbopages.org/proxy_u/en-ru.ru.e25f5593-656f2ba2-ba476bb2-74722d776562/https/www.geeksforgeeks.org/viewpager2-in-android-with-example/
 
-        // https://developer.alexanderklimov.ru/android/notification.php?ysclid=loigwef9l5430015313
     }
-
-
-
-
-
-
-
-
-
-
-
 
     public void viborCveta() {
 

@@ -4,11 +4,9 @@ import static com.example.planirfinansov6.Kalendar2.APP_PREFERENCES;
 import static com.example.planirfinansov6.Kalendar2.mSettings;
 
 import static com.example.planirfinansov6.Kalendar2.monthPrim;
-/*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
 import static com.example.planirfinansov6.MainActivity.izmenMount;
 import static com.example.planirfinansov6.MainActivity.KeyPrimMonth;
 import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
-
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -40,10 +38,6 @@ public class Primech6 extends AppCompatActivity {
     EditText textPrim;
     ImageButton buSochranitPrim;
     int poslCifrMount;
-
-
-
-    /* public static boolean qq;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -81,7 +75,7 @@ public class Primech6 extends AppCompatActivity {
 
             datePrim.setText("" + monthPrim);
         } else {
-            datePrim.setText("" + monthPrim+"  "+RassmatrivaemGod);
+            datePrim.setText("" + monthPrim + "  " + RassmatrivaemGod);
         }
     }
 
@@ -97,9 +91,7 @@ public class Primech6 extends AppCompatActivity {
     }
 
     public void clickKalendPr(View v) {
-
         izmenMount = 0;
-        /* vozvratnayaSVvodaData = false;*/
         Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
@@ -107,11 +99,9 @@ public class Primech6 extends AppCompatActivity {
     public void clickStatistikaPr(View view) {
 
         izmenMount = 0;
-
         Date segodnDate1 = new Date();
         SimpleDateFormat formatter1 = new SimpleDateFormat("yyyy");
         RassmatrivaemGod = Integer.parseInt(formatter1.format(segodnDate1));
-
         final Context context = this;            // Переход на другой класс (сдесь класс Statistika)
         Intent intent = new Intent(context, Statistika5.class);
         startActivity(intent);
@@ -252,6 +242,5 @@ public class Primech6 extends AppCompatActivity {
         }
         monthPrim = month2;
     }
-
 }
 

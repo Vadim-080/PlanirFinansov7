@@ -1,8 +1,10 @@
 package com.example.planirfinansov6;
 
 /*import static com.example.planirfinansov6.Kalendar2.vozvratnayaSVvodaData;*/
+
 import static com.example.planirfinansov6.Kalendar2.DateR;
 import static com.example.planirfinansov6.Kalendar2.DayR;
+import static com.example.planirfinansov6.Kalendar2.monthPrim;
 import static com.example.planirfinansov6.MainActivity.Key;
 import static com.example.planirfinansov6.MainActivity.KeyDP;
 import static com.example.planirfinansov6.MainActivity.KeyDR;
@@ -17,10 +19,8 @@ import static com.example.planirfinansov6.MainActivity.KeySumD;
 import static com.example.planirfinansov6.MainActivity.KeySumMonthRP;
 import static com.example.planirfinansov6.MainActivity.KeySumMonthRR;
 import static com.example.planirfinansov6.MainActivity.KeySumR;
-
-import static java.util.Calendar.MONTH;
-import static com.example.planirfinansov6.Kalendar2.monthPrim;
 import static com.example.planirfinansov6.MainActivity.izmenMount;
+import static java.util.Calendar.MONTH;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -98,14 +98,12 @@ public class Menu8 extends AppCompatActivity {
 
     public void clickKalend(View v) {
 
-       /* vozvratnayaSVvodaData = false;*/
         Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
     public void clickDoxod(View v) {
 
-        /*vozvratnayaSVvodaData = false;*/
         viborDat();
         Intent intent = new Intent(this, Vvod3.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
@@ -113,7 +111,6 @@ public class Menu8 extends AppCompatActivity {
 
     public void clickRasxod(View v) {
 
-        /*vozvratnayaSVvodaData = false;*/
         viborDat();
         Intent intent = new Intent(this, RasxodVvod4.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
@@ -123,7 +120,6 @@ public class Menu8 extends AppCompatActivity {
 
         mounth();
         izmenMount=0;
-
         viborDat();
         Intent intent = new Intent(this, Itog7.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
@@ -179,7 +175,6 @@ public class Menu8 extends AppCompatActivity {
     public void clickZamet(View view) {
 
         mounth();
-
         viborDat();
         final Context context = this;            // Переход на другой класс (сдесь класс Statistika)
         Intent intent = new Intent(context, Primech6.class);
@@ -196,7 +191,6 @@ public class Menu8 extends AppCompatActivity {
 
     public void clickRazvl(View v) {
 
-        /* vozvratnayaSVvodaData = false;*/
         Intent intent = new Intent(this, MenuRazvlech9.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }

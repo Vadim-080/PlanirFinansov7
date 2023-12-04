@@ -1,30 +1,28 @@
 package com.example.planirfinansov6;
 
+import static com.example.planirfinansov6.MainActivity.Key;
 import static com.example.planirfinansov6.MainActivity.KeyDP;
 import static com.example.planirfinansov6.MainActivity.KeyDR;
 import static com.example.planirfinansov6.MainActivity.KeyDTolko;
 import static com.example.planirfinansov6.MainActivity.KeyMonth;
-import static com.example.planirfinansov6.MainActivity.Key;
 import static com.example.planirfinansov6.MainActivity.KeyMonthD;
 import static com.example.planirfinansov6.MainActivity.KeyMonthR;
-import static com.example.planirfinansov6.MainActivity.KeySumMonthRR;
-import static com.example.planirfinansov6.MainActivity.KeySumMonthRP;
+import static com.example.planirfinansov6.MainActivity.KeyPrimMonth;
 import static com.example.planirfinansov6.MainActivity.KeyRP;
 import static com.example.planirfinansov6.MainActivity.KeyRR;
 import static com.example.planirfinansov6.MainActivity.KeySumD;
+import static com.example.planirfinansov6.MainActivity.KeySumMonthRP;
+import static com.example.planirfinansov6.MainActivity.KeySumMonthRR;
 import static com.example.planirfinansov6.MainActivity.KeySumR;
 import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
 import static com.example.planirfinansov6.MainActivity.izmenMount;
 import static com.example.planirfinansov6.MainActivity.summaDoxodZaMonth;
-import static com.example.planirfinansov6.MainActivity.KeyPrimMonth;
-
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -292,7 +290,6 @@ public class Kalendar2 extends AppCompatActivity {
                 SimpleDateFormat formatter4 = new SimpleDateFormat("yyyyMM");
                 KeyMonth = Integer.parseInt(formatter4.format(vibranData));
 
-
                 String month2 = null;
                 switch (q) {
                     case 1:
@@ -404,16 +401,13 @@ public class Kalendar2 extends AppCompatActivity {
     }
 
     public void clickItog(View v) {
-
         izmenMount=0;
-
         Intent intent = new Intent(this, Itog7.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
     public void nadpisZaMonth() {
         nadpisZaMonth.setTypeface(TypefaceKalend);   // ШРИФТ
-
         Date segodnDate = new Date();
         SimpleDateFormat formatter2 = new SimpleDateFormat("yyyy");
         int year = Integer.parseInt(formatter2.format(segodnDate));
@@ -426,25 +420,20 @@ public class Kalendar2 extends AppCompatActivity {
     }
 
     public void clickRedaktor(View view) {
-
         Key();
-
         final Context context = this;            // Переход на другой класс (сдесь класс Vvod)
         Intent intent = new Intent(context, Vvod3.class);
         startActivity(intent);
     }
 
     public void clickStatistika(View view) {
-
         final Context context = this;            // Переход на другой класс (сдесь класс Statistika)
         Intent intent = new Intent(context, Statistika5.class);
         startActivity(intent);
     }
 
     public void clickPrimechK(View view) {
-
         Key();
-
         final Context context = this;            // Переход на другой класс (сдесь класс Statistika)
         Intent intent = new Intent(context, Primech6.class);
         startActivity(intent);
@@ -472,9 +461,7 @@ public class Kalendar2 extends AppCompatActivity {
         TypefaceKalend = a1;
     }
 
-
     public void clickMenu(View v) {
-
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }
@@ -482,8 +469,6 @@ public class Kalendar2 extends AppCompatActivity {
     public void clickVixod(View view) {
         this.finishAffinity();
     }  // СВЕРТЫВАЕТ ПРИЛОЖЕНИЕ
-
-    // ЕЩЕ НАДО ДОБАВИТЬ ПОЛНОСТЬЮ ЗАКРЫВАТЬ
 }
 
 

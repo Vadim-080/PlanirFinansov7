@@ -14,9 +14,9 @@
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:onClick="clickKalend"
         android:text="КАЛЕНДАРЬ"
         android:textColor="@color/CV1"
-        android:onClick="clickKalend"
         android:textSize="5pt"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.918" />
 
     <TextView
         android:id="@+id/nadpZamet2"
@@ -34,8 +34,8 @@
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="ЗАМЕТКИ"
         android:onClick="clickPrimechSt"
+        android:text="ЗАМЕТКИ"
         android:textColor="@color/CV1"
         android:textSize="5pt"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.918" />
 
     <TextView
         android:id="@+id/nadpNazad"
@@ -54,8 +54,8 @@
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="НАЗАД"
         android:onClick="clickGodNazad"
+        android:text="НАЗАД"
         android:textColor="@color/CV1"
         android:textSize="5pt"
         android:textStyle="bold"
@@ -65,7 +65,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.918" />
 
     <TextView
         android:id="@+id/nadpVper"
@@ -74,8 +74,8 @@
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="ВПЕРЕД"
         android:onClick="clickGodVpered"
+        android:text="ВПЕРЕД"
         android:textColor="@color/CV1"
         android:textSize="5pt"
         android:textStyle="bold"
@@ -85,7 +85,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.918" />
+
 
     <TextView
         android:id="@+id/znachenSrednDoxod_view"
@@ -103,19 +104,17 @@
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
-
-
+        app:layout_constraintVertical_bias="0.725" />
 
     <ImageButton
         android:id="@+id/buMenu"
         android:layout_width="52dp"
         android:layout_height="58dp"
-        android:backgroundTint="@color/CV36"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMenu"
         android:src="@drawable/menu_3_64"
@@ -130,7 +129,7 @@
 
     <TextView
         android:id="@+id/month_1_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -144,11 +143,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <TextView
         android:id="@+id/minMonth_view"
@@ -165,11 +164,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintLeft_toLeftOf="@+id/nadpMin_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <TextView
         android:id="@+id/maxMonth_view"
@@ -186,15 +185,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.794" />
 
     <TextView
         android:id="@+id/summa_2_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -207,15 +206,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:id="@+id/summa_3_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -228,15 +227,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.496" />
 
     <TextView
         android:id="@+id/summa_4_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -249,15 +248,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.539" />
 
     <TextView
         android:id="@+id/summa_5_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -270,15 +269,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.582" />
 
     <TextView
         android:id="@+id/summa_6_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -291,15 +290,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.910"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <TextView
         android:id="@+id/summa_7_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -316,11 +315,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <TextView
         android:id="@+id/summa_8_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -337,95 +336,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:id="@+id/summa_9_view"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:autoSizeTextType="uniform"
-        android:background="@drawable/poledox"
-        android:gravity="center"
-        android:paddingLeft="2dp"
-        android:paddingTop="2dp"
-        android:paddingRight="2dp"
-        android:paddingBottom="2dp"
-        android:textColor="@color/CV6"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
-
-    <TextView
-        android:id="@+id/summa_10_view"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:autoSizeTextType="uniform"
-        android:background="@drawable/poledox"
-        android:gravity="center"
-        android:paddingLeft="2dp"
-        android:paddingTop="2dp"
-        android:paddingRight="2dp"
-        android:paddingBottom="2dp"
-        android:textColor="@color/CV6"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
-
-    <TextView
-        android:id="@+id/summa_11_view"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:autoSizeTextType="uniform"
-        android:background="@drawable/poledox"
-        android:gravity="center"
-        android:paddingLeft="2dp"
-        android:paddingTop="2dp"
-        android:paddingRight="2dp"
-        android:paddingBottom="2dp"
-        android:textColor="@color/CV6"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
-
-    <TextView
-        android:id="@+id/summa_12_view"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:autoSizeTextType="uniform"
-        android:background="@drawable/poledox"
-        android:gravity="center"
-        android:paddingLeft="2dp"
-        android:paddingTop="2dp"
-        android:paddingRight="2dp"
-        android:paddingBottom="2dp"
-        android:textColor="@color/CV6"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
-
-    <TextView
-        android:id="@+id/summa_1_view"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
@@ -439,14 +354,98 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <TextView
+        android:id="@+id/summa_10_view"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/poledox"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/CV6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <TextView
+        android:id="@+id/summa_11_view"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/poledox"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/CV6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <TextView
+        android:id="@+id/summa_12_view"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/poledox"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/CV6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <TextView
+        android:id="@+id/summa_1_view"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/poledox"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/CV6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toRightOf="@+id/month_1_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <TextView
         android:id="@+id/month_2_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -460,15 +459,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:id="@+id/month_3_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -482,15 +481,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
+        app:layout_constraintVertical_bias="0.496" />
 
     <TextView
         android:id="@+id/month_5_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -504,15 +503,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.582" />
 
     <TextView
         android:id="@+id/month_6_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -526,15 +525,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.05"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <TextView
         android:id="@+id/month_7_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -548,15 +547,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <TextView
         android:id="@+id/month_8_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -570,15 +569,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:id="@+id/month_9_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -592,15 +591,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintVertical_bias="0.496" />
 
     <TextView
         android:id="@+id/month_10_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -614,15 +613,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.539" />
 
     <TextView
         android:id="@+id/month_11_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -636,15 +635,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
+        app:layout_constraintVertical_bias="0.582" />
 
     <TextView
         android:id="@+id/month_12_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -658,15 +657,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <TextView
         android:id="@+id/month_4_view"
-        android:layout_width="65dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV3"
@@ -680,16 +679,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.539" />
 
     <TextView
         android:id="@+id/god_view"
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="90dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -711,13 +712,13 @@
 
     <TextView
         android:id="@+id/nadpMax_view"
-        android:layout_width="80dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"
         android:text="MAX"
@@ -726,21 +727,21 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.788" />
 
     <TextView
         android:id="@+id/nadpMin_view"
-        android:layout_width="80dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"
         android:text="MIN"
@@ -749,20 +750,21 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <TextView
         android:id="@+id/nadp_sred_dox_view"
         android:layout_width="170dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
+        android:gravity="center"
         android:paddingLeft="2dp"
         android:paddingTop="2dp"
         android:paddingRight="2dp"
@@ -773,11 +775,11 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <TextView
         android:id="@+id/znachenMax_view"
@@ -794,11 +796,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintVertical_bias="0.806" />
 
     <TextView
         android:id="@+id/znachenMin_view"
@@ -815,23 +817,23 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <ImageButton
         android:id="@+id/buPrimechSt"
 
         android:layout_width="75dp"
 
-        android:layout_height="65dp"
-        android:background="@drawable/poleicon"
+        android:layout_height="55dp"
+
         android:gravity="center"
 
         android:onClick="clickPrimechSt"
-
+        android:background="@android:color/transparent"
         android:src="@drawable/zamet_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -844,9 +846,9 @@
     <ImageButton
         android:id="@+id/GodNazad_view"
         android:layout_width="75dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:autoSizeTextType="uniform"
-        android:background="@drawable/poleicon"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickGodNazad"
         android:src="@drawable/caland_8_64"
@@ -861,9 +863,9 @@
     <ImageButton
         android:id="@+id/GodVpered_view"
         android:layout_width="75dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:autoSizeTextType="uniform"
-        android:background="@drawable/poleicon"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickGodVpered"
         android:src="@drawable/caland_9_64"
@@ -878,10 +880,9 @@
     <ImageButton
         android:id="@+id/nazadD10"
         android:layout_width="75dp"
-
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:autoSizeTextType="uniform"
-        android:background="@drawable/poleicon"
+        android:background="@android:color/transparent"
         android:gravity="center"
 
         android:onClick="clickKalend"
@@ -892,26 +893,36 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.992" />
 
     <LinearLayout
-        android:id="@+id/chart"
-        android:layout_width="162dp"
-        android:layout_height="296dp"
+        android:id="@+id/Grafik"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/poleicon"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/polegraf"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216">
+        app:layout_constraintVertical_bias="0.116">
 
-
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

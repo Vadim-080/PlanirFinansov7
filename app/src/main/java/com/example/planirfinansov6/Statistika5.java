@@ -8,6 +8,7 @@ import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -17,10 +18,30 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.github.mikephil.charting.utils.ColorTemplate;
+
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Statistika5 extends AppCompatActivity {
+
+    BarChart barChart;
+
+    // variable for our bar data.
+    BarData barData;
+
+    // variable for our bar data set.
+    BarDataSet barDataSet;
+
+    // array list for storing entries.
+    ArrayList barEntriesArrayList;
 
     Animation anim;
     int monMinMax;
@@ -41,11 +62,6 @@ public class Statistika5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.statistika);
-
-// https://otosection.com/creating-a-simple-graph-in-android-studio-with-graphview/  -  ВИДЕО ГРАФИК
-
-
-
 
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE); // Внутри метода onCreate() вы инициализируете переменную  mSettings
 
@@ -105,6 +121,7 @@ public class Statistika5 extends AppCompatActivity {
             a2.animate().alpha(0.0f).setDuration(1500);
         }
 
+
         viborShrifta();
         month_1.setTypeface(TypefaceStatist);   // ШРИФТ
         month_2.setTypeface(TypefaceStatist);   // ШРИФТ
@@ -137,73 +154,73 @@ public class Statistika5 extends AppCompatActivity {
         double prom1 = Math.round((massiv[0] / 1000) * 10.0) / 10.0;
         if (prom1 != 0) {
             summa_1.setText("" + prom1);
-        } else summa_1.setText("-");
+        } else summa_1.setText("*");
 
         summa_2.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom2 = Math.round((massiv[1] / 1000) * 10.0) / 10.0;
         if (prom2 != 0) {
             summa_2.setText("" + prom2);
-        } else summa_2.setText("-");
+        } else summa_2.setText("*");
 
         summa_3.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom3 = Math.round((massiv[2] / 1000) * 10.0) / 10.0;
         if (prom3 != 0) {
             summa_3.setText("" + prom3);
-        } else summa_3.setText("-");
+        } else summa_3.setText("*");
 
         summa_4.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom4 = Math.round((massiv[3] / 1000) * 10.0) / 10.0;
         if (prom4 != 0) {
             summa_4.setText("" + prom4);
-        } else summa_4.setText("-");
+        } else summa_4.setText("*");
 
         summa_5.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom5 = Math.round((massiv[4] / 1000) * 10.0) / 10.0;
         if (prom5 != 0) {
             summa_5.setText("" + prom5);
-        } else summa_5.setText("-");
+        } else summa_5.setText("*");
 
         summa_6.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom6 = Math.round((massiv[5] / 1000) * 10.0) / 10.0;
         if (prom6 != 0) {
             summa_6.setText("" + prom6);
-        } else summa_6.setText("-");
+        } else summa_6.setText("*");
 
         summa_7.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom7 = Math.round((massiv[6] / 1000) * 10.0) / 10.0;
         if (prom7 != 0) {
             summa_7.setText("" + prom7);
-        } else summa_7.setText("-");
+        } else summa_7.setText("*");
 
         summa_8.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom8 = Math.round((massiv[7] / 1000) * 10.0) / 10.0;
         if (prom8 != 0) {
             summa_8.setText("" + prom8);
-        } else summa_8.setText("-");
+        } else summa_8.setText("*");
 
         summa_9.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom9 = Math.round((massiv[8] / 1000) * 10.0) / 10.0;
         if (prom9 != 0) {
             summa_9.setText("" + prom9);
-        } else summa_9.setText("-");
+        } else summa_9.setText("*");
 
         summa_10.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom10 = Math.round((massiv[9] / 1000) * 10.0) / 10.0;
         if (prom10 != 0) {
             summa_10.setText("" + prom10);
-        } else summa_10.setText("-");
+        } else summa_10.setText("*");
 
         summa_11.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom11 = Math.round((massiv[10] / 1000) * 10.0) / 10.0;
         if (prom11 != 0) {
             summa_11.setText("" + prom11);
-        } else summa_11.setText("-");
+        } else summa_11.setText("*");
 
         summa_12.setTypeface(TypefaceStatist);   // ШРИФТ
         double prom12 = Math.round((massiv[11] / 1000) * 10.0) / 10.0;
         if (prom12 != 0) {
             summa_12.setText("" + prom12);
-        } else summa_12.setText("-");
+        } else summa_12.setText("*");
 
 
         int q1 = 0;   // ВЫБОР МАКСИМАЛЬНОГО ЗНАЧЕНИЯ ЗА ГОД
@@ -226,6 +243,20 @@ public class Statistika5 extends AppCompatActivity {
                 znachenMax.setText("-");
                 maxMonth.setText("");
             }
+        }
+
+        if (tekGod != RassmatrivaemGod && znachenMax.getText().toString().contains("-")) {
+            ImageButton b1 = (ImageButton) findViewById(R.id.GodNazad_view);
+            b1.setEnabled(false);
+            ImageButton a1 = findViewById(R.id.GodNazad_view);   // ПРОЗРАЧНОСТЬ КНОПКИ
+            a1.setAlpha(1f);
+            a1.animate().alpha(0.2f).setDuration(1500);
+
+            TextView b2 = (TextView) findViewById(R.id.nadpNazad);
+            b2.setEnabled(false);
+            TextView a2 = findViewById(R.id.nadpNazad);   // ПРОЗРАЧНОСТЬ КНОПКИ
+            a2.setAlpha(1f);
+            a2.animate().alpha(0.0f).setDuration(1500);
         }
 
         int q2 = 1;      // ВЫБОР МИНИМАЛЬНОГО ЗНАЧЕНИЯ ЗА ГОД
@@ -287,22 +318,163 @@ public class Statistika5 extends AppCompatActivity {
             znachenSrednDoxod.setText("" + sredn1);
         }
 
+        // Построение графика
+        // https://otosection.com/creating-a-simple-graph-in-android-studio-with-graphview/  -  ВИДЕО ГРАФИК
 
+        barChart = findViewById(R.id.chart);
 
+        // calling method to get bar entries.
+        getBarEntries();
 
+        // creating a new bar data set.
+        barDataSet = new BarDataSet(barEntriesArrayList, "");
 
+        // creating a new bar data and
+        // passing our bar data set.
+        barData = new BarData(barDataSet);
 
+        // below line is to set data
+        // to our bar chart.
+        barChart.setData(barData);
+
+        // adding color to our bar data set.
+        /*  barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);*/
+
+        barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
+        barDataSet.setValueTypeface(Typeface.DEFAULT_BOLD);
+
+        // setting text color.
+        barDataSet.setValueTextColor(Color.MAGENTA);
+
+        // setting text size
+        barDataSet.setValueTextSize(12); // размер цифр столбцов
+
+        barChart.getDescription().setEnabled(false);
+
+        barChart.animateY(5000);
+        barChart.getXAxis().setTextSize(10); // размер назв месяцев
+
+        barChart.getXAxis().setTextColor(Color.BLUE);
+        barChart.getXAxis().setTypeface(Typeface.DEFAULT_BOLD);
+
+        barChart.setDrawBarShadow(false);   // ФОН столбцов
+
+        barChart.setDrawValueAboveBar(true); // Значение каждой полосы рисуется выше неё
+
+        barChart.setDrawGridBackground(false);  // ФОН всего графика
+
+        XAxis xAxis = barChart.getXAxis();
+        xAxis.setPosition(XAxis.XAxisPosition.TOP); // Надписи месяцев наверху
+        xAxis.setLabelRotationAngle(-15);   // Поворот надписей месяцев
+        xAxis.setLabelCount(26, true);  // количество линий оси Х
     }
 
-    public void clickKalend (View v) {
+    private void getBarEntries() {
+        // creating a new array list
+        barEntriesArrayList = new ArrayList<>();
+
+        float q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12;
+
+        if (summa_1.getText().toString().contains("*")) {
+            q1 = 0;
+        } else {
+            q1 = Float.parseFloat((summa_1.getText().toString()));
+        }
+
+        if (summa_2.getText().toString().contains("*")) {
+            q2 = 0;
+        } else {
+            q2 = Float.parseFloat(summa_2.getText().toString());
+        }
+
+        if (summa_3.getText().toString().contains("*")) {
+            q3 = 0;
+        } else {
+            q3 = Float.parseFloat(summa_3.getText().toString());
+        }
+
+        if (summa_4.getText().toString().contains("*")) {
+            q4 = 0;
+        } else {
+            q4 = Float.parseFloat(summa_4.getText().toString());
+        }
+
+        if (summa_5.getText().toString().contains("*")) {
+            q5 = 0;
+        } else {
+            q5 = Float.parseFloat(summa_5.getText().toString());
+        }
+
+        if (summa_6.getText().toString().contains("*")) {
+            q6 = 0;
+        } else {
+            q6 = Float.parseFloat(summa_6.getText().toString());
+        }
+
+        if (summa_7.getText().toString().contains("*")) {
+            q7 = 0;
+        } else {
+            q7 = Float.parseFloat(summa_7.getText().toString());
+        }
+
+        if (summa_8.getText().toString().contains("*")) {
+            q8 = 0;
+        } else {
+            q8 = Float.parseFloat(summa_8.getText().toString());
+        }
+
+        if (summa_9.getText().toString().contains("*")) {
+            q9 = 0;
+        } else {
+            q9 = Float.parseFloat(summa_9.getText().toString());
+        }
+
+        if (summa_10.getText().toString().contains("*")) {
+            q10 = 0;
+        } else {
+            q10 = Float.parseFloat(summa_10.getText().toString());
+        }
+
+        if (summa_11.getText().toString().contains("*")) {
+            q11 = 0;
+        } else {
+            q11 = Float.parseFloat(summa_11.getText().toString());
+        }
+
+        if (summa_12.getText().toString().contains("*")) {
+            q12 = 0;
+        } else {
+            q12 = Float.parseFloat(summa_12.getText().toString());
+        }
+
+        // adding new entry to our array list with bar
+        // entry and passing x and y axis value to it.
+        barEntriesArrayList.add(new BarEntry(1f, q1));
+        barEntriesArrayList.add(new BarEntry(2f, q2));
+        barEntriesArrayList.add(new BarEntry(3f, q3));
+        barEntriesArrayList.add(new BarEntry(4f, q4));
+        barEntriesArrayList.add(new BarEntry(5f, q5));
+        barEntriesArrayList.add(new BarEntry(6f, q6));
+        barEntriesArrayList.add(new BarEntry(7f, q7));
+        barEntriesArrayList.add(new BarEntry(8f, q8));
+        barEntriesArrayList.add(new BarEntry(9f, q9));
+        barEntriesArrayList.add(new BarEntry(10f, q10));
+        barEntriesArrayList.add(new BarEntry(11f, q11));
+        barEntriesArrayList.add(new BarEntry(12f, q12));
+
+        String[] xAxisLables = new String[]{"", "янв", "фев", "март", "апр", "май", "июнь", "июль", "авг", "сент", "окт", "нояб", "дек"};
+
+        barChart.getXAxis().setValueFormatter(new IndexAxisValueFormatter(xAxisLables));
+    }
+
+    public void clickKalend(View v) {
 
         KeyMonthD = KeyPromDlyaVozvrata; // ВОЗВРАЩАЕТ НАЧАЛЬНОЕ ЗНАЧЕНИЕ KeyMonthD
-      /*  vozvratnayaSVvodaData = false;*/
         Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
-    public void  clickMenu(View v) {
+    public void clickMenu(View v) {
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
@@ -311,7 +483,6 @@ public class Statistika5 extends AppCompatActivity {
     public void clickGodVpered(View v) {
 
         RassmatrivaemGod = RassmatrivaemGod + 1;
-
         final Context context = this;            // Переход на другой класс (сдесь класс Statistika)
         Intent intent = new Intent(context, Statistika5.class);
         startActivity(intent);
@@ -320,9 +491,7 @@ public class Statistika5 extends AppCompatActivity {
     public void clickGodNazad(View v) {
         ImageButton b1 = (ImageButton) findViewById(R.id.GodVpered_view);
         b1.setEnabled(true);
-
         RassmatrivaemGod = RassmatrivaemGod - 1;
-
         final Context context = this;            // Переход на другой класс (сдесь класс Statistika)
         Intent intent = new Intent(context, Statistika5.class);
         startActivity(intent);
@@ -341,7 +510,9 @@ public class Statistika5 extends AppCompatActivity {
 
         if (mSettings.contains(String.valueOf(KeyMonthD))) {
             znachZaMonth = mSettings.getInt(String.valueOf(KeyMonthD), 0);
-        } else {znachZaMonth = 0;}
+        } else {
+            znachZaMonth = 0;
+        }
     }
 
     public void viborShrifta() {
@@ -406,6 +577,5 @@ public class Statistika5 extends AppCompatActivity {
                 break;
         }
     }
-
 }
 

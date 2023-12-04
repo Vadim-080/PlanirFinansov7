@@ -56,11 +56,15 @@
     <color name="CV53">#90E1B2</color>
     <color name="CV54">#97D6B1</color>
     <color name="CV55">#6FEAFB</color>
+    <color name="CV56">#000000</color>
+    <color name="CV57">#5AFB5A</color>
+
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#FF91F1FF</color>
     <color name="red">#C51162</color>
+    <color name="fiolet">#FFAA00FF</color>
 
 
     <color name="colorPrimary">#00BCD4</color>

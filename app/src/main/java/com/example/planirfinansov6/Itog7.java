@@ -26,7 +26,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 public class Itog7 extends AppCompatActivity {
@@ -154,12 +153,12 @@ public class Itog7 extends AppCompatActivity {
         tv4 = (TextView) findViewById(R.id.nadp_ras_view);
         tv4.startAnimation(anim);
 
-        Date segodnDate2 = new Date();
+       /* Date segodnDate2 = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
         Calendar c = Calendar.getInstance();
         int daysToDecrement = -1;
         c.add(Calendar.DATE, daysToDecrement);
-        String dte = sdf.format(c.getTime()).toString();
+        String dte = sdf.format(c.getTime()).toString();*/
 
 
         Date segodnDate1 = new Date();
@@ -172,9 +171,6 @@ public class Itog7 extends AppCompatActivity {
         } else {
             dateItog.setText("" + monthPrim + "  " + RassmatrivaemGod);
         }
-
-      /*  dateItog.setText(""+ dte);*/
-
     }
 
 
@@ -263,11 +259,7 @@ public class Itog7 extends AppCompatActivity {
             pokazItogZaMonth.setTypeface(TypefaceItog);   // ШРИФТ
             pokazItogZaMonth.setText("0");
         }
-
-
     }
-
-
 
     public void viborShrifta() {
         byte a = (byte) (Math.random() * 5); // Случайное число от 0 до 4

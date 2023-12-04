@@ -1,5 +1,3 @@
-import java.util.regex.Pattern.compile
-
 plugins {
     id("com.android.application")
 
@@ -18,6 +16,11 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags += ""
+            }
+        }
     }
 
     buildTypes {
@@ -32,10 +35,13 @@ android {
 
 
     }
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.22.1"
+        }
+    }
 }
-
-
-
 
 dependencies {
 
@@ -46,7 +52,11 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")     // Библиотека Графиков
 
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")  // Библиотека перелистывания
 
+    implementation ("info.hoang8f:fbutton:1.0.5")   // Библиотека разновидностей кнопок
 
 }
+

@@ -26,11 +26,12 @@ public class RazvlVideo10 extends AppCompatActivity {
         nadpRazvl.setTypeface(TypefaceRazvl);    // ШРИФТ
     }
 
-    public void  clickMenu(View v) {
+    public void clickMenu(View v) {
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }
+
     public void clickVixod(View view) {
         this.finishAffinity();
     }  // СВЕРТЫВАЕТ ПРИЛОЖЕНИЕ
@@ -76,6 +77,7 @@ public class RazvlVideo10 extends AppCompatActivity {
         myWebLink.setData(Uri.parse("https://parikmaher.net.ru/videos/?ysclid=lod2e8rw7l485634835"));
         startActivity(myWebLink);
     }
+
     public void clickVid1(View view) {
         Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
         myWebLink.setData(Uri.parse("https://rutube.ru/plst/183885/?ysclid=lod2jl7kyg113354505"));

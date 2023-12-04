@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/stylemain"
@@ -9,53 +10,73 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="295dp"
-        android:layout_height="68dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="30dp"
         android:autoSizeTextType="uniform"
         android:gravity="center"
         android:paddingLeft="2dp"
         android:paddingTop="2dp"
         android:paddingRight="2dp"
         android:paddingBottom="2dp"
-        android:textColor="@color/CV6"
+        android:textColor="@color/CV14"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="365dp"
-        android:layout_height="545dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="130dp"
         android:autoSizeTextType="uniform"
         android:background="@drawable/stylefraz"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:onClick="clickNachnem"
         android:paddingLeft="5pt"
         android:paddingTop="5pt"
         android:paddingRight="5pt"
         android:paddingBottom="5pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.39" />
 
     <ImageButton
         android:id="@+id/Menu"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV41"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMenu"
         android:src="@drawable/menu_2_128"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.01"
@@ -66,27 +87,35 @@
 
     <Button
         android:id="@+id/buNachnem"
-        android:layout_width="260dp"
-        android:layout_height="85dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="10dp"
         android:autoSizeTextType="uniform"
         android:backgroundTint="@color/CV41"
         android:gravity="center"
         android:onClick="clickNachnem"
         android:text="НАЧНЕМ РАБОТУ"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FD0808"
-        android:textColorHighlight="#FF6D00"
-        android:textColorLink="#0ECDEA"
 
+        android:background="@android:color/transparent"
+        android:textColor="#FD0808"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.993"
-        app:rippleColor="#65F10C" />
+        app:layout_constraintVertical_bias="0.975"
+
+
+
+
+        />
+
+
+
+    
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
