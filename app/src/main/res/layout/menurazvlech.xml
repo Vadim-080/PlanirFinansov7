@@ -9,12 +9,12 @@
 
     <ImageButton
         android:id="@+id/nazadD5"
-        android:layout_width="68dp"
-        android:layout_height="63dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
         android:gravity="center"
-
+        android:scaleType="fitXY"
         android:src="@drawable/razvl_1_72"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,12 +26,12 @@
 
     <ImageButton
         android:id="@+id/nazadD6"
-        android:layout_width="68dp"
-        android:layout_height="63dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
         android:gravity="center"
-
+        android:scaleType="fitXY"
         android:src="@drawable/razvl_1_72"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
