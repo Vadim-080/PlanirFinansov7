@@ -34,12 +34,10 @@
 
     <ImageButton
         android:id="@+id/Menu"
-        android:backgroundTint="@color/CV37"
         android:onClick="clickMenu"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:autoSizeTextType="uniform"
-
         android:gravity="center"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
@@ -74,13 +72,9 @@
         android:layout_width="180dp"
         android:layout_height="119dp"
         android:autoSizeTextType="uniform"
-
         android:gravity="center"
-
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-
-
         android:onClick="clickVestnik"
         android:src="@drawable/yparik"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -214,7 +208,6 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV37"
         android:gravity="center"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
@@ -232,7 +225,6 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV38"
         android:gravity="center"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
@@ -249,17 +241,15 @@
         android:id="@+id/buVixod"
         android:layout_width="43dp"
         android:layout_height="43dp"
-        android:backgroundTint="@color/CV38"
         android:gravity="center"
         android:onClick="clickVixod"
         android:src="@drawable/restart_1_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979" />
-
+        app:layout_constraintVertical_bias="0.985" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

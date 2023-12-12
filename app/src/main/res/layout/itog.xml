@@ -28,7 +28,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageButton
+        android:id="@+id/nazadD5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:src="@drawable/itog_2_64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/nadp_dox_view"
@@ -87,7 +104,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.280"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +148,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,7 +184,6 @@
         android:backgroundTint="@color/CV51"
         android:gravity="center"
         android:onClick="clickMenu"
-
         android:src="@drawable/menu_3_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -276,7 +290,6 @@
 
     <ImageButton
         android:id="@+id/MonthNazadIt_view"
-
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:autoSizeTextType="uniform"
@@ -348,6 +361,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
