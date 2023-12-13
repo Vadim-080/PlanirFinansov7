@@ -55,7 +55,6 @@ public class Kalendar2 extends AppCompatActivity {
     public static final String APP_PREFERENCES_COUNTER_MonthD = String.valueOf(KeyMonthD); // Создадим параметр, который мы хотим сохранять в настройках
     public static final String APP_PREFERENCES_COUNTER_MonthR = String.valueOf(KeyMonthR); // Создадим параметр, который мы хотим сохранять в настройках
     public static SharedPreferences mSettings;  // Создаём переменную, представляющую экземпляр класса SharedPreferences, который отвечает за работу с настройками
-   /* public static boolean vozvratnayaSVvodaData = true;*/
     public static int summaDoxodObchEtotDay;
     public static int summaRasxodObchEtotDay;
     public static Date vibranData, vibranDataMonth;
