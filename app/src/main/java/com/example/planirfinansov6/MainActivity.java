@@ -18,7 +18,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager2.widget.ViewPager2;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -26,7 +25,6 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ViewPager2 viewPager2;
     private static final int NOTIFICATION_REMINDER = 1;
     public static int Key, KeyDR, KeyDP; // Key - промежуточн ключ = год-месяц-дата,    KeyDR - ключ Доход с Работы = дата,    KeyDP - ключ Доход с Продаж = 1дата.
     public static int KeyRR, KeyRP; // KeyRR - ключ Расход за Расходники для работы = 2дата,    KeyRP - ключ Расход за Продукцию на продажу = 3дата.
