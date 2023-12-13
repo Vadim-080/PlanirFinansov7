@@ -63,7 +63,6 @@ public class Kalendar2 extends AppCompatActivity {
     CalendarView calendar;
     TextView date_view, day_view;
     TextView doxodRab, pokazZaMonth;
-    /*  TextView ИСПЫТ_view;*/
     TextView nadpisZaMonth, nadpisDoxod;
     TextView tv1, tv5, tv2, tv7;
     Animation anim;
