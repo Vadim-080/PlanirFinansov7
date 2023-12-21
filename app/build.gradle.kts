@@ -58,5 +58,18 @@ dependencies {
 
     implementation ("info.hoang8f:fbutton:1.0.5")   // Библиотека разновидностей кнопок
 
+
+    implementation ("com.google.android.gms:play-services-ads-identifier:18.0.1")
+
+    implementation ("com.my.target:mytarget-sdk:5.20.1")
+
+
+
+
+
+
+
+
+
 }
 

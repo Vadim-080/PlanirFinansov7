@@ -47,23 +47,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.008" />
 
-    <ImageButton
-        android:id="@+id/nazadD5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:autoSizeTextType="uniform"
-        android:gravity="center"
-        android:scaleType="fitXY"
-        android:background="@android:color/transparent"
-        android:src="@drawable/itog_2_64"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
-
     <TextView
         android:id="@+id/nadp_dox_view"
         android:layout_width="170dp"

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +10,25 @@
     android:layout_height="match_parent"
     android:background="@drawable/stylemain"
     tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.my.target.ads.MyTargetView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:myTarget_adSize="banner_320x50"
+            app:myTarget_isRefreshAd="true"
+            app:myTarget_slotId="1522084">
+        </com.my.target.ads.MyTargetView>
+    </RelativeLayout>
+
 
     <TextView
         android:id="@+id/textView1"

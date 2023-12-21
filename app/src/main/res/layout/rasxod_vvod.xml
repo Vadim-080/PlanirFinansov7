@@ -89,7 +89,7 @@
         android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMenu"
-        android:src="@drawable/menu_4"
+        android:src="@drawable/menu_3_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.986"

@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         String timeStamp = new SimpleDateFormat("HH").format(Calendar.getInstance().getTime());
         byte q = Byte.parseByte(timeStamp);
         tv1.setTypeface(TypefaceMainAct);
-        if (q >= 5 && q < 11) {
+
+        /*if (q >= 5 && q < 11) {
             tv1.setText("ДОБРОЕ УТРО ЗАЯ");
         }
         if (q >= 11 && q < 18) {
@@ -77,6 +78,16 @@ public class MainActivity extends AppCompatActivity {
         }
         if (q >= 18 && q < 23) {
             tv1.setText("ДОБРЫЙ ВЕЧЕР ЗАЙЧЁНОК");
+        }*/
+
+        if (q >= 5 && q < 11) {
+            tv1.setText("ДОБРОЕ УТРО");
+        }
+        if (q >= 11 && q < 18) {
+            tv1.setText("ДОБРЫЙ ДЕНЬ");
+        }
+        if (q >= 18 && q < 23) {
+            tv1.setText("ДОБРЫЙ ВЕЧЕР");
         }
         if (q >= 23 || q < 5) {
             tv1.setText("ДОБРОЙ НОЧИ");
@@ -84,7 +95,10 @@ public class MainActivity extends AppCompatActivity {
             tv3 = (TextView) findViewById(R.id.textView2);
             tv3.setTypeface(TypefaceMainAct);
             tv3.startAnimation(anim);
-            tv3.setText("НОЧЬЮ \n НАДО СПАТЬ \n ПОЦЕЛУЙ \n И ОБНИМИ \n СВОЕГО ЗАЙКУ \n И ИДИ СПАТЬ");
+
+           /* tv3.setText("НОЧЬЮ \n НАДО СПАТЬ \n ПОЦЕЛУЙ \n И ОБНИМИ \n СВОЕГО ЗАЙКУ \n И ИДИ СПАТЬ");*/
+
+            tv3.setText("НОЧЬЮ \n НАДО СПАТЬ \n А \n РАБОТУ \n ОТЛОЖИТЬ \n НА УТРО");
 
             anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim4);
             tv4 = (TextView) findViewById(R.id.buNachnem);

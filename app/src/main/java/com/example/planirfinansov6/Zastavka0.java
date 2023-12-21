@@ -25,6 +25,11 @@ public class Zastavka0 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zastavka);
 
+
+
+
+
+
         tv = (TextView) findViewById(R.id.tv);
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv2 = (ImageView) findViewById(R.id.iv2);
