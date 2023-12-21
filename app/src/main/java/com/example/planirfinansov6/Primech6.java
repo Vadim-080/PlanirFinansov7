@@ -91,13 +91,16 @@ public class Primech6 extends AppCompatActivity {
     }
 
     public void clickKalendPr(View v) {
+        PrimMonth = textPrim.getText().toString();
+        onPause();
         izmenMount = 0;
         Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
 
     public void clickStatistikaPr(View view) {
-
+        PrimMonth = textPrim.getText().toString();
+        onPause();
         izmenMount = 0;
         Date segodnDate1 = new Date();
         SimpleDateFormat formatter1 = new SimpleDateFormat("yyyy");
@@ -108,7 +111,8 @@ public class Primech6 extends AppCompatActivity {
     }
 
     public void clickMenu(View v) {
-
+        PrimMonth = textPrim.getText().toString();
+        onPause();
         izmenMount = 0;
         final Context context = this;            // Переход на другой класс
         Intent intent = new Intent(context, Menu8.class);
@@ -158,7 +162,8 @@ public class Primech6 extends AppCompatActivity {
     }
 
     public void clickMonthNazad(View v) {
-
+        PrimMonth = textPrim.getText().toString();
+        onPause();
         izmenMount = 1;
         nomerMount();
         if (poslCifrMount == 1) {
@@ -170,14 +175,9 @@ public class Primech6 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void clickKalend(View v) {
-
-        Intent intent = new Intent(this, Kalendar2.class);   // Переход на другой класс (сдесь класс Vvod)
-        startActivity(intent);
-    }
-
     public void clickMonthVpered(View v) {
-
+        PrimMonth = textPrim.getText().toString();
+        onPause();
         izmenMount = (-1);
         nomerMount();
         if (poslCifrMount == 12) {
