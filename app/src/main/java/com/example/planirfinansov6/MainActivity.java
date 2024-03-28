@@ -12,12 +12,18 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.my.target.ads.MyTargetView;
+import com.my.target.common.models.IAdLoadingError;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -45,10 +51,81 @@ public class MainActivity extends AppCompatActivity {
     Animation anim;
     String Citata;
 
+    androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
+
+    private MyTargetView adView; // Рекламный  экземпляр класса
+    RelativeLayout layout;
+    RelativeLayout.LayoutParams adViewLayoutParams;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+// СКРЫВАЕМ ВЕРХНЮЮ И НИЖНЮЮ СТРОКИ НАВИГАЦИИ
+
+        ConstraintLayout = findViewById(R.id.ConstraintLayout_main);
+
+        int currentVis = ConstraintLayout.getSystemUiVisibility();
+        int newVis;
+        if ((currentVis & View.SYSTEM_UI_FLAG_LOW_PROFILE) == View.SYSTEM_UI_FLAG_LOW_PROFILE) {
+            newVis = View.SYSTEM_UI_FLAG_VISIBLE;
+        } else {
+            newVis = View.SYSTEM_UI_FLAG_LOW_PROFILE | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        }
+        ConstraintLayout.setSystemUiVisibility(newVis);
+
+// РЕКЛАМА
+
+       /* // При необходимости, настройте конфигурацию трекера
+        MyTrackerParams trackerParams = MyTracker.getTrackerParams();
+        MyTrackerConfig trackerConfig = MyTracker.getTrackerConfig();
+        // …
+        // Настройте параметры трекера
+        // …
+        // Инициализируйте трекер
+        MyTracker.initTracker(21535904908833794010, this);*/
+
+        layout =  findViewById(R.id.RelativeLayout);
+        adView = new MyTargetView(this);
+        // Устанавливаем id слота
+        adView.setSlotId(1531313);
+        // Устанавливаем LayoutParams
+        adViewLayoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        adViewLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        adView.setLayoutParams(adViewLayoutParams);
+        // Устанавливаем слушатель событий
+        adView.setListener(new MyTargetView.MyTargetViewListener() {
+            @Override
+            public void onLoad(MyTargetView myTargetView) {
+                // Данные успешно загружены, запускаем показ объявлений
+                layout.addView(adView);
+                /*  layout.addView(adView, adViewLayoutParams );*/
+            }
+
+            /**
+             * @param iAdLoadingError
+             * @param myTargetView
+             */
+            public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
+            }
+
+            @Override
+            public void onShow(MyTargetView myTargetView) {
+            }
+
+            @Override
+            public void onClick(MyTargetView myTargetView) {
+            }
+        });
+        // Запускаем загрузку данных
+        adView.load();
+
+
+
+
+
 
         citat = (TextView) findViewById(R.id.textView2);
 
@@ -149,6 +226,14 @@ public class MainActivity extends AppCompatActivity {
         //  https://translated.turbopages.org/proxy_u/en-ru.ru.e25f5593-656f2ba2-ba476bb2-74722d776562/https/www.geeksforgeeks.org/viewpager2-in-android-with-example/
 
     }
+
+    @Override
+    protected void onDestroy() {
+        if (adView != null) adView.destroy();
+        super.onDestroy();
+    }
+
+
 
     public void viborCveta() {
 
@@ -432,13 +517,15 @@ public class MainActivity extends AppCompatActivity {
             Citata = "Любовь к прекрасному - это вкус. Создание красоты - это искусство";
         }
         if (b == 66) {
-            Citata = "ЗАЙКА МОЯ Я ТЕБЯ ЛЮБЛЮ";
+          /*  Citata = "ЗАЙКА МОЯ Я ТЕБЯ ЛЮБЛЮ";*/
+            Citata = "ВСЕГДА ПОМНИ - ЧТО ВСЁ БУДЕТ ХОРОШО";
         }
         if (b == 67) {
             Citata = "Я хотела, чтобы люди чувствовали себя красивыми, и стала парикмахером";
         }
         if (b == 68) {
-            Citata = "ТВОЙ ЗАЙКА ОЧЕНЬ ОЧЕНЬ ПО ТЕБЕ СКУЧАЕТ";
+           /* Citata = "ТВОЙ ЗАЙКА ОЧЕНЬ ОЧЕНЬ ПО ТЕБЕ СКУЧАЕТ";*/
+            Citata = "ВСЕГДА ПОМНИ - ЧТО ВСЁ БУДЕТ ХОРОШО";
         }
         if (b == 69) {
             Citata = "Я не просто парикмахер. Вы не просто клиент. Вместе я обещаю раскрыть красоту и уверенность, которых никогда не было бы с химическими веществами";

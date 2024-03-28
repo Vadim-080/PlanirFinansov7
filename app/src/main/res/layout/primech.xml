@@ -65,7 +65,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <TextView
         android:id="@+id/nadpNazad"
@@ -109,8 +109,8 @@
 
     <ImageButton
         android:id="@+id/NazadD"
-        android:layout_width="75dp"
-        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
         android:gravity="center"
@@ -122,7 +122,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <TextView
         android:id="@+id/nadpRasx"
@@ -142,7 +142,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/datePrim_view"
@@ -168,8 +168,8 @@
 
     <ImageButton
         android:id="@+id/buStatiatikaD"
-        android:layout_width="75dp"
-        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
         android:background="@android:color/transparent"
         android:onClick="clickStatistikaPr"
         android:src="@drawable/statist_2_64"
@@ -179,7 +179,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <TextView
         android:id="@+id/nadpStat"
@@ -199,7 +199,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <ImageButton
         android:id="@+id/buKalendPr"
@@ -216,7 +216,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <ImageButton
         android:id="@+id/MonthNazad_view"
@@ -226,6 +226,7 @@
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
         android:gravity="center"
+        android:scaleType="fitXY"
         android:src="@drawable/caland_6_48"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -243,6 +244,7 @@
         android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMonthVpered"
+        android:scaleType="fitXY"
         android:src="@drawable/caland_7_48"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -262,7 +264,7 @@
         android:ellipsize="start"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="твой Зайка                          тебя очень сильно           ЛЮБИТ                                          💖"
+        android:hint="ЗАПИШИТЕ СВОЮ ЗАМЕТКУ"
         android:inputType="textMultiLine"
         android:paddingLeft="5pt"
         android:paddingTop="5pt"
@@ -291,6 +293,7 @@
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
         android:gravity="center"
+
         android:onClick="clickSochranitPrim"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"

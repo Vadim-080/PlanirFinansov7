@@ -19,16 +19,15 @@ public class Zastavka0 extends AppCompatActivity {
     private TextView tv;
     private ImageView iv1, iv2;
 
+  /*  private RewardedAd ad;*/
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zastavka);
 
-
-
-
-
+       /* initAd();*/
 
         tv = (TextView) findViewById(R.id.tv);
         iv1 = (ImageView) findViewById(R.id.iv1);
@@ -47,7 +46,11 @@ public class Zastavka0 extends AppCompatActivity {
         iv1.startAnimation(myanim1);
         iv2.startAnimation(myanim2);
         tv.startAnimation(myanim3);
+
+
         final Intent i = new Intent(this, MainActivity.class);
+
+
         Thread timer = new Thread() {
             public void run() {
                 try {
@@ -61,8 +64,55 @@ public class Zastavka0 extends AppCompatActivity {
             }
         };
 
+
         timer.start();
     }
+
+
+/*// VK зелама ВИДЕО
+
+    private void initAd() {
+        // Включение режима отладки
+        *//*MyTargetManager.setDebugMode(true);*//*
+
+        // Создаем экземпляр RewardedAd
+        ad = new RewardedAd(1533575, this);
+        // Устанавливаем слушатель событий
+        ad.setListener(new RewardedAd.RewardedAdListener() {
+            @Override
+            public void onLoad(RewardedAd ad) { // Запускаем показ
+                ad.show();
+            }
+
+            @Override
+            public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull RewardedAd rewardedAd) {
+
+            }
+
+
+            @Override
+            public void onClick(RewardedAd ad) {
+            }
+
+            @Override
+            public void onDisplay(RewardedAd ad) {
+            }
+
+            @Override
+            public void onDismiss(RewardedAd ad) {
+            }
+
+            @Override
+            public void onReward(@NonNull Reward reward, @NonNull RewardedAd ad) {
+            }
+
+
+        });
+
+        // Запускаем загрузку данных
+        ad.load();
+    }*/
+
 
     public void viborCveta() {
 

@@ -25,7 +25,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.915" />
 
     <ImageButton
         android:id="@+id/nazadD5"
@@ -62,7 +62,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.915" />
 
     <TextView
         android:id="@+id/nadpNazad"
@@ -82,7 +82,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.915" />
 
     <TextView
         android:id="@+id/nadpVper"
@@ -102,7 +102,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.915" />
 
 
     <TextView
@@ -129,10 +129,12 @@
 
     <ImageButton
         android:id="@+id/buMenu"
-        android:layout_width="52dp"
-        android:layout_height="58dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@android:color/transparent"
+        android:autoSizeTextType="uniform"
         android:gravity="center"
+        android:scaleType="fitXY"
         android:onClick="clickMenu"
         android:src="@drawable/menu_3_64"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -847,10 +849,10 @@
 
         android:layout_height="55dp"
 
-        android:gravity="center"
-
-        android:onClick="clickPrimechSt"
         android:background="@android:color/transparent"
+
+        android:gravity="center"
+        android:onClick="clickPrimechSt"
         android:src="@drawable/zamet_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -858,15 +860,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.991" />
 
     <ImageButton
         android:id="@+id/GodNazad_view"
-        android:layout_width="75dp"
+        android:layout_width="70dp"
         android:layout_height="55dp"
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
         android:gravity="center"
+
         android:onClick="clickGodNazad"
         android:src="@drawable/caland_8_64"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -875,11 +878,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <ImageButton
         android:id="@+id/GodVpered_view"
-        android:layout_width="75dp"
+        android:layout_width="70dp"
         android:layout_height="55dp"
         android:autoSizeTextType="uniform"
         android:background="@android:color/transparent"
@@ -888,11 +891,11 @@
         android:src="@drawable/caland_9_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <ImageButton
         android:id="@+id/nazadD10"
@@ -911,7 +914,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <LinearLayout
         android:id="@+id/Grafik"
