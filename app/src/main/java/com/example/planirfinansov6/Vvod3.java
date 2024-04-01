@@ -48,7 +48,13 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.my.target.ads.Reward;
+import com.my.target.ads.RewardedAd;
+import com.my.target.common.MyTargetManager;
+import com.my.target.common.models.IAdLoadingError;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -78,11 +84,26 @@ public class Vvod3 extends AppCompatActivity {
     TextView VsegoDoxod, doxodZaMont;
     EditText vvodDoxodR1, vvodDoxodR2, vvodDoxodR3, vvodDoxodR4, vvodDoxodR5, vvodDoxodP1, vvodDoxodP2, vvodDoxodP3, vvodDoxodP4, vvodDoxodP5;
 
+    androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
+    private RewardedAd ad;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.doxod_vvod);
+
+// СКРЫВАЕМ ВЕРХНЮЮ И НИЖНЮЮ СТРОКИ НАВИГАЦИИ
+        ConstraintLayout = findViewById(R.id.ConstraintLayout_doxod);
+        int currentVis = ConstraintLayout.getSystemUiVisibility();
+        int newVis;
+        if ((currentVis & View.SYSTEM_UI_FLAG_LOW_PROFILE) == View.SYSTEM_UI_FLAG_LOW_PROFILE) {
+            newVis = View.SYSTEM_UI_FLAG_VISIBLE;
+        } else {
+            newVis = View.SYSTEM_UI_FLAG_LOW_PROFILE | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        }
+        ConstraintLayout.setSystemUiVisibility(newVis);
+
         Key();
 
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE); // Внутри метода onCreate() вы инициализируете переменную  mSettings
@@ -397,8 +418,43 @@ public class Vvod3 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
+        initAd(); // ВИДЕО РЕКЛАМА VK
+
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
+    }
+
+    // VK реклама ВИДЕО
+    private void initAd() {
+        // Включение режима отладки
+        MyTargetManager.setDebugMode(true);
+
+        // Создаем экземпляр RewardedAd
+        ad = new RewardedAd(1535550, this);
+        // Устанавливаем слушатель событий
+        ad.setListener(new RewardedAd.RewardedAdListener() {
+            @Override
+            public void onLoad(RewardedAd ad) { // Запускаем показ
+                ad.show();
+            }
+            @Override
+            public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull RewardedAd rewardedAd) {
+            }
+            @Override
+            public void onClick(RewardedAd ad) {
+            }
+            @Override
+            public void onDisplay(RewardedAd ad) {
+            }
+            @Override
+            public void onDismiss(RewardedAd ad) {
+            }
+            @Override
+            public void onReward(@NonNull Reward reward, @NonNull RewardedAd ad) {
+            }
+        });
+        // Запускаем загрузку данных
+        ad.load();
     }
 
     public void clickStatistikaD(View view) {

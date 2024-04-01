@@ -18,12 +18,24 @@ public class Test11 extends AppCompatActivity {
     Typeface TypefaceTest;   // ШРИФТ
     TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7;
     Animation anim;
+    androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
+
+// СКРЫВАЕМ ВЕРХНЮЮ И НИЖНЮЮ СТРОКИ НАВИГАЦИИ
+        ConstraintLayout = findViewById(R.id.ConstraintLayout_test);
+        int currentVis = ConstraintLayout.getSystemUiVisibility();
+        int newVis;
+        if ((currentVis & View.SYSTEM_UI_FLAG_LOW_PROFILE) == View.SYSTEM_UI_FLAG_LOW_PROFILE) {
+            newVis = View.SYSTEM_UI_FLAG_VISIBLE;
+        } else {
+            newVis = View.SYSTEM_UI_FLAG_LOW_PROFILE | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        }
+        ConstraintLayout.setSystemUiVisibility(newVis);
 
         nadpTest = (TextView) findViewById(R.id.nadpTest_view);
         nadp_1 = (TextView) findViewById(R.id.nadp_1);

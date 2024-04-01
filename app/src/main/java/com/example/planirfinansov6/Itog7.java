@@ -38,11 +38,25 @@ public class Itog7 extends AppCompatActivity {
     int doxZaMonth, rasxZaMonth, itogZaMonth;
     TextView pokazDoxZaMonth, pokazRasZaMonth, pokazItogZaMonth;
 
+    androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.itog);
+
+// СКРЫВАЕМ ВЕРХНЮЮ И НИЖНЮЮ СТРОКИ НАВИГАЦИИ
+        ConstraintLayout = findViewById(R.id.ConstraintLayout_itog);
+        int currentVis = ConstraintLayout.getSystemUiVisibility();
+        int newVis;
+        if ((currentVis & View.SYSTEM_UI_FLAG_LOW_PROFILE) == View.SYSTEM_UI_FLAG_LOW_PROFILE) {
+            newVis = View.SYSTEM_UI_FLAG_VISIBLE;
+        } else {
+            newVis = View.SYSTEM_UI_FLAG_LOW_PROFILE | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        }
+        ConstraintLayout.setSystemUiVisibility(newVis);
+
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE); // Внутри метода onCreate() вы инициализируете переменную  mSettings
         viborShrifta();
 

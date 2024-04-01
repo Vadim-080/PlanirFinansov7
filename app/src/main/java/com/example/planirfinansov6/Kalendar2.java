@@ -38,6 +38,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.my.target.ads.MyTargetView;
 import com.my.target.ads.Reward;
 import com.my.target.ads.RewardedAd;
+import com.my.target.common.MyTargetManager;
 import com.my.target.common.models.IAdLoadingError;
 
 import java.text.DecimalFormat;
@@ -91,10 +92,6 @@ public class Kalendar2 extends AppCompatActivity {
         setContentView(R.layout.kalend);
 
 
-
-
-
-
 // СКРЫВАЕМ ВЕРХНЮЮ И НИЖНЮЮ СТРОКИ НАВИГАЦИИ
 
         ConstraintLayout = findViewById(R.id.ConstraintLayout_kalend);
@@ -109,10 +106,10 @@ public class Kalendar2 extends AppCompatActivity {
         ConstraintLayout.setSystemUiVisibility(newVis);
 
 // VK РЕКЛАМА
-        layout =  findViewById(R.id.RelativeLayout);
+        layout = findViewById(R.id.RelativeLayout);
         adView = new MyTargetView(this);
         // Устанавливаем id слота
-        adView.setSlotId(1531466);
+        adView.setSlotId(1535547);
         // Устанавливаем LayoutParams
         adViewLayoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         adViewLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
@@ -404,52 +401,38 @@ public class Kalendar2 extends AppCompatActivity {
         });
     }
 
-
-    // VK зелама ВИДЕО
-
+// VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
-        /*MyTargetManager.setDebugMode(true);*/
+        MyTargetManager.setDebugMode(true);
 
         // Создаем экземпляр RewardedAd
-        ad = new RewardedAd(1533575, this);
+        ad = new RewardedAd(1535550, this);
         // Устанавливаем слушатель событий
         ad.setListener(new RewardedAd.RewardedAdListener() {
             @Override
             public void onLoad(RewardedAd ad) { // Запускаем показ
                 ad.show();
             }
-
             @Override
             public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull RewardedAd rewardedAd) {
-
             }
-
-
             @Override
             public void onClick(RewardedAd ad) {
             }
-
             @Override
             public void onDisplay(RewardedAd ad) {
             }
-
             @Override
             public void onDismiss(RewardedAd ad) {
             }
-
             @Override
             public void onReward(@NonNull Reward reward, @NonNull RewardedAd ad) {
             }
-
-
         });
-
         // Запускаем загрузку данных
         ad.load();
     }
-
-
 
     @Override  // Остатки VK рекламы
     protected void onDestroy() {
@@ -521,7 +504,7 @@ public class Kalendar2 extends AppCompatActivity {
     }
 
     public void clickItog(View v) {
-        izmenMount=0;
+        izmenMount = 0;
         Intent intent = new Intent(this, Itog7.class);   // Переход на другой класс (сдесь класс Vvod)
         startActivity(intent);
     }
@@ -541,7 +524,7 @@ public class Kalendar2 extends AppCompatActivity {
 
     public void clickRedaktor(View view) {
 
-        initAd(); // ВИДЕО РЕКЛАМА
+        /* initAd(); // ВИДЕО РЕКЛАМА*/
 
         Key();
         final Context context = this;            // Переход на другой класс (сдесь класс Vvod)
@@ -585,6 +568,9 @@ public class Kalendar2 extends AppCompatActivity {
     }
 
     public void clickMenu(View v) {
+
+        initAd(); // ВИДЕО РЕКЛАМА VK
+
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }

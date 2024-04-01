@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -19,7 +20,7 @@ public class Zastavka0 extends AppCompatActivity {
     private TextView tv;
     private ImageView iv1, iv2;
 
-  /*  private RewardedAd ad;*/
+    androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,11 +28,23 @@ public class Zastavka0 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zastavka);
 
-       /* initAd();*/
+// СКРЫВАЕМ ВЕРХНЮЮ И НИЖНЮЮ СТРОКИ НАВИГАЦИИ
+        ConstraintLayout = findViewById(R.id.activity_zastavka);
+        int currentVis = ConstraintLayout.getSystemUiVisibility();
+        int newVis;
+        if ((currentVis & View.SYSTEM_UI_FLAG_LOW_PROFILE) == View.SYSTEM_UI_FLAG_LOW_PROFILE) {
+            newVis = View.SYSTEM_UI_FLAG_VISIBLE;
+        } else {
+            newVis = View.SYSTEM_UI_FLAG_LOW_PROFILE | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        }
+        ConstraintLayout.setSystemUiVisibility(newVis);
 
-        tv = (TextView) findViewById(R.id.tv);
-        iv1 = (ImageView) findViewById(R.id.iv1);
-        iv2 = (ImageView) findViewById(R.id.iv2);
+
+        /* initAd();*/
+
+        tv = findViewById(R.id.tv);
+        iv1 = findViewById(R.id.iv1);
+        iv2 = findViewById(R.id.iv2);
 
         viborShrifta();  // ШРИФТ
         viborCveta();

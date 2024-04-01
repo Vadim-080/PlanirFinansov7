@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/stylerasx"
+    android:id="@+id/ConstraintLayout_rasxod"
     tools:context=".MainActivity">
 
     <TextView

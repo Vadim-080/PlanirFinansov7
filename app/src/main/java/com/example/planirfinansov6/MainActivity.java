@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         layout =  findViewById(R.id.RelativeLayout);
         adView = new MyTargetView(this);
         // Устанавливаем id слота
-        adView.setSlotId(1531313);
+        adView.setSlotId(1535544);
         // Устанавливаем LayoutParams
         adViewLayoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         adViewLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);

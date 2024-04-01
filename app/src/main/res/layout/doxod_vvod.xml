@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/styledox"
     tools:context=".MainActivity"
-
+    android:id="@+id/ConstraintLayout_doxod"
    >
 
     <TextView
