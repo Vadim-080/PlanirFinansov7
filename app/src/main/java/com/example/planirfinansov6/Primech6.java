@@ -15,14 +15,20 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.my.target.ads.MyTargetView;
+import com.my.target.common.models.IAdLoadingError;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -40,6 +46,9 @@ public class Primech6 extends AppCompatActivity {
     int poslCifrMount;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
+    private MyTargetView adView; // Рекламный  экземпляр класса
+    RelativeLayout layout;
+    RelativeLayout.LayoutParams adViewLayoutParams;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -57,6 +66,42 @@ public class Primech6 extends AppCompatActivity {
             newVis = View.SYSTEM_UI_FLAG_LOW_PROFILE | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         }
         ConstraintLayout.setSystemUiVisibility(newVis);
+
+// VK РЕКЛАМА
+        layout = findViewById(R.id.RelativeLayout);
+        adView = new MyTargetView(this);
+        // Устанавливаем id слота
+        adView.setSlotId(1535547);
+        // Устанавливаем LayoutParams
+        adViewLayoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        adViewLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        adView.setLayoutParams(adViewLayoutParams);
+        // Устанавливаем слушатель событий
+        adView.setListener(new MyTargetView.MyTargetViewListener() {
+            @Override
+            public void onLoad(MyTargetView myTargetView) {
+                // Данные успешно загружены, запускаем показ объявлений
+                layout.addView(adView);
+                /*  layout.addView(adView, adViewLayoutParams );*/
+            }
+
+            /**
+             * @param iAdLoadingError
+             * @param myTargetView
+             */
+            public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
+            }
+
+            @Override
+            public void onShow(MyTargetView myTargetView) {
+            }
+
+            @Override
+            public void onClick(MyTargetView myTargetView) {
+            }
+        });
+        // Запускаем загрузку данных
+        adView.load();
 
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE); // Внутри метода onCreate() вы инициализируете переменную  mSettings
         viborShrifta();
@@ -91,6 +136,12 @@ public class Primech6 extends AppCompatActivity {
         } else {
             datePrim.setText("" + monthPrim + "  " + RassmatrivaemGod);
         }
+    }
+
+    @Override  // Остатки VK рекламы баннер
+    protected void onDestroy() {
+        if (adView != null) adView.destroy();
+        super.onDestroy();
     }
 
     public void clickSochranitPrim(View v) {

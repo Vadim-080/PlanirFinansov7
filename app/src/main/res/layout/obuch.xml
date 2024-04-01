@@ -35,8 +35,8 @@
 
     <ImageButton
         android:id="@+id/buMenu"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@android:color/transparent"
         android:gravity="center"
         android:onClick="clickMenu"
@@ -48,7 +48,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.993" />
+        app:layout_constraintVertical_bias="0.93" />
 
     <TextView
         android:id="@+id/nadp_2"
@@ -261,11 +261,11 @@
 
     <ImageButton
         android:id="@+id/buVixod"
-        android:layout_width="63dp"
-        android:layout_height="75dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@android:color/transparent"
         android:gravity="center"
-
+        android:scaleType="fitXY"
         android:onClick="clickVixod"
         android:src="@drawable/restart_1_64"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -274,7 +274,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.993" />
+        app:layout_constraintVertical_bias="0.93" />
 
     <ImageButton
         android:id="@+id/nazadD6"
@@ -308,5 +308,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.008" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.my.target.ads.MyTargetView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:myTarget_adSize="banner_320x50"
+            app:myTarget_isRefreshAd="true"
+            app:myTarget_slotId="1535547">
+        </com.my.target.ads.MyTargetView>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

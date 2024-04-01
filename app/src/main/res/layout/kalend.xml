@@ -9,8 +9,6 @@
     android:background="@drawable/polekalen"
     tools:context=".MainActivity">
 
-
-
     <TextView
         android:id="@+id/date_view"
         android:layout_width="250dp"

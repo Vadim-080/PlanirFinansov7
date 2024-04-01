@@ -434,7 +434,7 @@ public class Kalendar2 extends AppCompatActivity {
         ad.load();
     }
 
-    @Override  // Остатки VK рекламы
+    @Override  // Остатки VK рекламы баннер
     protected void onDestroy() {
         if (adView != null) adView.destroy();
         super.onDestroy();
