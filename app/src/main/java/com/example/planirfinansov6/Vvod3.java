@@ -812,8 +812,8 @@ public class Vvod3 extends AppCompatActivity {
         int t1 = promVvod;
         promVozv = s1.format(t1);
         summaDoxodDayProd.setText("" + s1.format(t1));
-
     }
+
 }
 
 

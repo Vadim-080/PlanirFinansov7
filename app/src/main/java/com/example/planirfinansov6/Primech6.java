@@ -28,6 +28,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.my.target.ads.MyTargetView;
+import com.my.target.ads.Reward;
+import com.my.target.ads.RewardedAd;
+import com.my.target.common.MyTargetManager;
 import com.my.target.common.models.IAdLoadingError;
 
 import java.text.SimpleDateFormat;
@@ -49,6 +52,7 @@ public class Primech6 extends AppCompatActivity {
     private MyTargetView adView; // Рекламный  экземпляр класса
     RelativeLayout layout;
     RelativeLayout.LayoutParams adViewLayoutParams;
+    private RewardedAd ad;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -306,6 +310,39 @@ public class Primech6 extends AppCompatActivity {
                 break;
         }
         monthPrim = month2;
+    }
+
+    // VK реклама ВИДЕО
+    private void initAd() {
+        // Включение режима отладки
+        MyTargetManager.setDebugMode(true);
+
+        // Создаем экземпляр RewardedAd
+        ad = new RewardedAd(1535550, this);
+        // Устанавливаем слушатель событий
+        ad.setListener(new RewardedAd.RewardedAdListener() {
+            @Override
+            public void onLoad(RewardedAd ad) { // Запускаем показ
+                ad.show();
+            }
+            @Override
+            public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull RewardedAd rewardedAd) {
+            }
+            @Override
+            public void onClick(RewardedAd ad) {
+            }
+            @Override
+            public void onDisplay(RewardedAd ad) {
+            }
+            @Override
+            public void onDismiss(RewardedAd ad) {
+            }
+            @Override
+            public void onReward(@NonNull Reward reward, @NonNull RewardedAd ad) {
+            }
+        });
+        // Запускаем загрузку данных
+        ad.load();
     }
 }
 

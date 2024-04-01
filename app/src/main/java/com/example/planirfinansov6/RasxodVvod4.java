@@ -681,6 +681,8 @@ public class RasxodVvod4 extends AppCompatActivity {
         }
         TypefaceRasxod = a1;
     }
+
+
 }
 
 
