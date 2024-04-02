@@ -217,6 +217,8 @@ public class Itog7 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
+        initAd(); // ВИДЕО РЕКЛАМА VK
+
         izmenMount = 0;
         final Context context = this;            // Переход на другой класс
         Intent intent = new Intent(context, Menu8.class);

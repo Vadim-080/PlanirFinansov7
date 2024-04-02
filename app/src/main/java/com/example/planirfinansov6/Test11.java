@@ -170,6 +170,8 @@ public class Test11 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
+        initAd(); // ВИДЕО РЕКЛАМА VK
+
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }

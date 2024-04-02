@@ -312,6 +312,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickMenu(View view) {    // Переход в меню
+
+        initAd(); // ВИДЕО РЕКЛАМА VK
+
         final Context context = this;
         Intent intent = new Intent(context, Menu8.class);
         startActivity(intent);

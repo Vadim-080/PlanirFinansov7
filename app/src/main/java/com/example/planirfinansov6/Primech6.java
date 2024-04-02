@@ -180,6 +180,9 @@ public class Primech6 extends AppCompatActivity {
     }
 
     public void clickMenu(View v) {
+
+        initAd(); // ВИДЕО РЕКЛАМА VK
+
         PrimMonth = textPrim.getText().toString();
         onPause();
         izmenMount = 0;
