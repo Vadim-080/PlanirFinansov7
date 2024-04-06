@@ -13,8 +13,8 @@ android {
         applicationId = "com.example.planirfinansov6"
         minSdk = 30
         targetSdk = 33
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "2.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     }
@@ -50,10 +50,7 @@ dependencies {
 
     implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")     // Библиотека Графиков
 
-    /*implementation ("androidx.viewpager2:viewpager2:1.0.0")  // Библиотека перелистывания*/
-
     implementation ("info.hoang8f:fbutton:1.0.5")   // Библиотека разновидностей кнопок
-
 
     implementation ("com.google.android.gms:play-services-ads-identifier:18.0.1")
 
@@ -61,27 +58,15 @@ dependencies {
 
     implementation ("com.my.target:mytarget-sdk:3.2.0")
 
-
-
-
     implementation ("com.google.android.exoplayer:exoplayer-core:2.19.1")
 
     implementation ("com.google.android.exoplayer:exoplayer-hls:2.19.1")
 
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
 
+    /*implementation ("androidx.viewpager2:viewpager2:1.0.0")  // Библиотека перелистывания*/
+
   /*  implementation ("com.google.android.gms:play-services-ads:23.0.0")*/
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

@@ -164,7 +164,7 @@ public class MenuRazvlech9 extends AppCompatActivity {
         this.finishAffinity();
     }  // СВЕРТЫВАЕТ ПРИЛОЖЕНИЕ
 
-    // VK реклама ВИДЕО
+// VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);

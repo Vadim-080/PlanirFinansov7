@@ -136,7 +136,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -188,7 +188,7 @@
     <TextView
         android:id="@+id/nadpDoxod_view"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
@@ -202,11 +202,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
         android:id="@+id/nadp_rab_view"
@@ -228,7 +228,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <EditText
         android:id="@+id/vvod_doxod_R_1"
@@ -465,7 +465,28 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/nadpDoxod_view1"
+        android:layout_width="300dp"
+        android:layout_height="13dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="2dp"
+        android:gravity="center"
+        android:paddingRight="2dp"
+        android:textSize="11dp"
+        android:text="для заполнения нажмитее на поле ниже"
+        android:textColor="@color/CV32"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
 
     <ImageButton
         android:id="@+id/button"
@@ -548,7 +569,7 @@
         android:src="@drawable/itog_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
