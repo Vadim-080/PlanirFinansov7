@@ -46,7 +46,6 @@
         android:scaleType="fitXY"
         android:background="@android:color/transparent" >
 
-
         <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_notification" />
         <meta-data
@@ -59,14 +58,8 @@
 
         />
 
-
-
-
-
         <activity android:name="com.my.target.common.MyTargetActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
-
-
 
         <activity
             android:name=".Zastavka0"
