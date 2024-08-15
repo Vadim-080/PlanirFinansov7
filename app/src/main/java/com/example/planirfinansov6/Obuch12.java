@@ -6,20 +6,11 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.my.target.ads.MyTargetView;
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 public class Obuch12 extends AppCompatActivity {
 
@@ -29,10 +20,10 @@ public class Obuch12 extends AppCompatActivity {
     Animation anim;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
-    private MyTargetView adView; // Рекламный  экземпляр класса
+    /*private MyTargetView adView; // Рекламный  экземпляр класса
     RelativeLayout layout;
     RelativeLayout.LayoutParams adViewLayoutParams;
-    private RewardedAd ad;
+    private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -51,7 +42,7 @@ public class Obuch12 extends AppCompatActivity {
         }
         ConstraintLayout.setSystemUiVisibility(newVis);
 
-// VK РЕКЛАМА
+/*// VK РЕКЛАМА
         layout = findViewById(R.id.RelativeLayout);
         adView = new MyTargetView(this);
         // Устанавливаем id слота
@@ -66,13 +57,13 @@ public class Obuch12 extends AppCompatActivity {
             public void onLoad(MyTargetView myTargetView) {
                 // Данные успешно загружены, запускаем показ объявлений
                 layout.addView(adView);
-                /*  layout.addView(adView, adViewLayoutParams );*/
+                *//*  layout.addView(adView, adViewLayoutParams );*//*
             }
 
-            /**
+            *//**
              * @param iAdLoadingError
              * @param myTargetView
-             */
+             *//*
             public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
             }
 
@@ -85,7 +76,7 @@ public class Obuch12 extends AppCompatActivity {
             }
         });
         // Запускаем загрузку данных
-        adView.load();
+        adView.load();*/
 
         nadpObuch = (TextView) findViewById(R.id.nadpObuch_view);
         nadp_1 = (TextView) findViewById(R.id.nadp_1);
@@ -121,11 +112,11 @@ public class Obuch12 extends AppCompatActivity {
         tv5.startAnimation(anim);
     }
 
-    @Override  // Остатки VK рекламы баннер
+   /* @Override  // Остатки VK рекламы баннер
     protected void onDestroy() {
         if (adView != null) adView.destroy();
         super.onDestroy();
-    }
+    }*/
 
     public void click1 (View view) {
         Intent myWebLink = new Intent(Intent.ACTION_VIEW);
@@ -159,7 +150,7 @@ public class Obuch12 extends AppCompatActivity {
 
     public void  clickMenu(View v) {
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+       /* initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
@@ -190,7 +181,7 @@ public class Obuch12 extends AppCompatActivity {
         this.finishAffinity();
     }  // СВЕРТЫВАЕТ ПРИЛОЖЕНИЕ
 
-    // VK реклама ВИДЕО
+  /*  // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -221,7 +212,7 @@ public class Obuch12 extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 
 }
 

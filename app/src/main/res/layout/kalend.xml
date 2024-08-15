@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout_kalend"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:autoSizeTextType="uniform"
-    android:id="@+id/ConstraintLayout_kalend"
     android:background="@drawable/polekalen"
     tools:context=".MainActivity">
 
@@ -13,12 +13,12 @@
         android:id="@+id/date_view"
         android:layout_width="250dp"
         android:layout_height="32dp"
+        android:layout_marginTop="7dp"
         android:autoSizeTextType="uniform"
         android:gravity="center"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"
         android:text="ВЫБЕРИТЕ ДАТУ"
-        android:layout_marginTop="7dp"
         android:textColor="@color/CV4"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,9 +34,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:autoSizeTextType="uniform"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:scaleType="fitXY"
-        android:background="@android:color/transparent"
         android:src="@drawable/calend_3_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,11 +52,11 @@
         android:layout_height="15dp"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
         android:gravity="center"
         android:text="ЗАМЕТКИ"
         android:textColor="@color/CV1"
         android:textSize="5pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.985"
@@ -71,11 +71,11 @@
         android:layout_height="15dp"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
         android:gravity="center"
         android:text="СТАТИСТИКА"
         android:textColor="@color/CV1"
         android:textSize="5pt"
+        android:textStyle="bold"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,12 +91,12 @@
         android:layout_height="15dp"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
         android:gravity="center"
-        android:text="ДОХОД"
         android:onClick="clickRedaktor"
+        android:text="ДОХОД"
         android:textColor="@color/CV1"
         android:textSize="5pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -111,11 +111,11 @@
         android:layout_height="15dp"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
         android:gravity="center"
         android:text="ИТОГ"
         android:textColor="@color/CV1"
         android:textSize="5pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
@@ -148,21 +148,32 @@
 
     <CalendarView
         android:id="@+id/calendar"
-        android:background="@drawable/kalendstyle"
         android:layout_width="match_parent"
         android:layout_height="330dp"
-
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-
-        android:layout_marginTop="90dp"
-
         android:layout_alignParentStart="true"
+
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+
         android:layout_centerInParent="true"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="10dp"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/kalendstyle"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+
+
+        android:focusedMonthDateColor="@color/CV4"
         android:gravity="center_horizontal"
+        android:selectedWeekBackgroundColor="@color/CV2"
+        android:theme="@style/CalenderViewCustom"
+        android:unfocusedMonthDateColor="@color/CV1"
+
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        android:weekNumberColor="@color/CV5"
+        android:weekSeparatorLineColor="@color/CV3"
 
 
         app:layout_constraintHorizontal_bias="0.491"
@@ -170,19 +181,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.206"
-
-        android:theme="@style/CalenderViewCustom"
-        android:dateTextAppearance="@style/CalenderViewDateCustomText"
-        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
-
-
-
-
-        android:unfocusedMonthDateColor="@color/CV1"
-        android:selectedWeekBackgroundColor="@color/CV2"
-        android:weekSeparatorLineColor="@color/CV3"
-        android:focusedMonthDateColor="@color/CV4"
-        android:weekNumberColor="@color/CV5"
 
 
         >
@@ -195,12 +193,12 @@
         android:layout_height="42dp"
         android:autoSizeTextType="uniform"
         android:gravity="center"
+        android:onClick="clickRedaktor"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"
         android:text="ДОХОД  ЗА  ДЕНЬ"
         android:textColor="@color/CV6"
         android:textStyle="bold"
-        android:onClick="clickRedaktor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.184"
@@ -211,20 +209,20 @@
 
     <TextView
         android:id="@+id/pokazDoxodRab_view"
-        android:background="@drawable/polekal"
         android:layout_width="159dp"
         android:layout_height="41dp"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/polekal"
 
+        android:clickable="true"
         android:gravity="center"
+        android:onClick="clickRedaktor"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"
         android:text=""
+
         android:textColor="@color/CV6"
         android:textStyle="bold"
-
-        android:clickable="true"
-        android:onClick="clickRedaktor"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -262,8 +260,8 @@
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
         android:background="@drawable/poledox"
-        android:onClick="clickItog"
         android:gravity="center"
+        android:onClick="clickItog"
         android:paddingLeft="2pt"
         android:paddingRight="2pt"
         android:text=""
@@ -277,24 +275,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.808" />
 
+
     <ImageButton
         android:id="@+id/buDoxod1"
-        android:layout_width="75dp"
-        android:layout_height="70dp"
-        android:autoSizeTextType="uniform"
-        android:backgroundTint="@color/CV40"
-        android:gravity="center"
 
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoSizeTextType="uniform"
         android:onClick="clickRedaktor"
-        android:scaleType="fitXY"
+
+
+
+        android:scaleType="centerInside"
+        android:background="@null"
+
+
+
+
+
         android:src="@drawable/doxod_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.929" />
 
     <ImageButton
         android:id="@+id/buItog"
@@ -320,12 +328,12 @@
         android:layout_width="43dp"
         android:layout_height="43dp"
 
-        android:backgroundTint="@color/CV3"
         android:autoSizeTextType="uniform"
-        android:gravity="center"
-        android:scaleType="fitXY"
         android:background="@android:color/transparent"
+        android:backgroundTint="@color/CV3"
+        android:gravity="center"
         android:onClick="clickRedaktor"
+        android:scaleType="fitXY"
         android:src="@drawable/doxod_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -339,14 +347,14 @@
         android:id="@+id/buMenu2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/CV39"
         android:autoSizeTextType="uniform"
-        android:gravity="center"
-        android:scaleType="fitXY"
         android:background="@android:color/transparent"
-
-
+        android:backgroundTint="@color/CV39"
+        android:gravity="center"
         android:onClick="clickMenu"
+
+
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.986"
@@ -379,11 +387,11 @@
         android:id="@+id/buStatiatika"
         android:layout_width="75dp"
         android:layout_height="70dp"
-        android:backgroundTint="@color/CV40"
         android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/CV40"
         android:gravity="center"
-        android:scaleType="fitXY"
         android:onClick="clickStatistika"
+        android:scaleType="fitXY"
         android:src="@drawable/statist_2_64"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -413,21 +421,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.93" />
 
-    <RelativeLayout
-        android:id="@+id/RelativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.my.target.ads.MyTargetView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/ad_View"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:myTarget_adSize="banner_320x50"
-            app:myTarget_isRefreshAd="true"
-            app:myTarget_slotId="1535547">
-        </com.my.target.ads.MyTargetView>
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

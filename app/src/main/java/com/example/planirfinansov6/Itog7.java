@@ -21,13 +21,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
+
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -45,7 +41,7 @@ public class Itog7 extends AppCompatActivity {
     TextView pokazDoxZaMonth, pokazRasZaMonth, pokazItogZaMonth;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
-    private RewardedAd ad;
+ /*   private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -217,7 +213,7 @@ public class Itog7 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+     /*   initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         izmenMount = 0;
         final Context context = this;            // Переход на другой класс
@@ -386,7 +382,7 @@ public class Itog7 extends AppCompatActivity {
         monthPrim = month2;
     }
 
-    // VK реклама ВИДЕО
+   /* // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -417,7 +413,7 @@ public class Itog7 extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 
 }
 

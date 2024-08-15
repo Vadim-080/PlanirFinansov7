@@ -12,21 +12,12 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.my.target.ads.MyTargetView;
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -56,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
 
-    private MyTargetView adView; // Рекламный  экземпляр класса
+   /* private MyTargetView adView; // Рекламный  экземпляр класса
     RelativeLayout layout;
     RelativeLayout.LayoutParams adViewLayoutParams;
     private RewardedAd ad;
-
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,16 +71,19 @@ public class MainActivity extends AppCompatActivity {
         }
         ConstraintLayout.setSystemUiVisibility(newVis);
 
+/*
 // РЕКЛАМА
 
-       /* // При необходимости, настройте конфигурацию трекера
+       */
+/* // При необходимости, настройте конфигурацию трекера
         MyTrackerParams trackerParams = MyTracker.getTrackerParams();
         MyTrackerConfig trackerConfig = MyTracker.getTrackerConfig();
         // …
         // Настройте параметры трекера
         // …
         // Инициализируйте трекер
-        MyTracker.initTracker(21535904908833794010, this);*/
+        MyTracker.initTracker(21535904908833794010, this);*//*
+
 
         layout =  findViewById(R.id.RelativeLayout);
         adView = new MyTargetView(this);
@@ -105,13 +99,17 @@ public class MainActivity extends AppCompatActivity {
             public void onLoad(MyTargetView myTargetView) {
                 // Данные успешно загружены, запускаем показ объявлений
                 layout.addView(adView);
-                /*  layout.addView(adView, adViewLayoutParams );*/
+                */
+/*  layout.addView(adView, adViewLayoutParams );*//*
+
             }
 
-            /**
+            */
+/**
              * @param iAdLoadingError
              * @param myTargetView
-             */
+             *//*
+
             public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
             }
 
@@ -125,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         adView.load();
+*/
 
 
 
@@ -231,11 +230,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
+  /*  @Override
     protected void onDestroy() {
         if (adView != null) adView.destroy();
         super.onDestroy();
-    }
+    }*/
 
 
 
@@ -313,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickMenu(View view) {    // Переход в меню
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+     /*   initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         final Context context = this;
         Intent intent = new Intent(context, Menu8.class);
@@ -581,7 +580,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // VK реклама ВИДЕО
+  /*  // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -612,7 +611,7 @@ public class MainActivity extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 }
 
 

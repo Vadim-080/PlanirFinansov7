@@ -25,21 +25,13 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.CalendarView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.my.target.ads.MyTargetView;
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -76,14 +68,15 @@ public class Kalendar2 extends AppCompatActivity {
     Animation anim;
 
     public static boolean proverka = false;
-
-    // Перемен VK рекламы
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
+
+
+  /*  // Перемен VK рекламы
     private MyTargetView adView; // Рекламный  экземпляр класса
     RelativeLayout layout;
     RelativeLayout.LayoutParams adViewLayoutParams;
 
-    private RewardedAd ad;
+    private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -105,7 +98,7 @@ public class Kalendar2 extends AppCompatActivity {
         }
         ConstraintLayout.setSystemUiVisibility(newVis);
 
-// VK РЕКЛАМА
+/*// VK РЕКЛАМА
         layout = findViewById(R.id.RelativeLayout);
         adView = new MyTargetView(this);
         // Устанавливаем id слота
@@ -120,13 +113,13 @@ public class Kalendar2 extends AppCompatActivity {
             public void onLoad(MyTargetView myTargetView) {
                 // Данные успешно загружены, запускаем показ объявлений
                 layout.addView(adView);
-                /*  layout.addView(adView, adViewLayoutParams );*/
+                *//*  layout.addView(adView, adViewLayoutParams );*//*
             }
 
-            /**
+            *//**
              * @param iAdLoadingError
              * @param myTargetView
-             */
+             *//*
             public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
             }
 
@@ -139,7 +132,7 @@ public class Kalendar2 extends AppCompatActivity {
             }
         });
         // Запускаем загрузку данных
-        adView.load();
+        adView.load();*/
 
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
 
@@ -401,7 +394,7 @@ public class Kalendar2 extends AppCompatActivity {
         });
     }
 
-// VK реклама ВИДЕО
+/*// VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -438,7 +431,7 @@ public class Kalendar2 extends AppCompatActivity {
     protected void onDestroy() {
         if (adView != null) adView.destroy();
         super.onDestroy();
-    }
+    }*/
 
     @Override
     public void onResume() {    // Получаем число из настроек
@@ -569,7 +562,7 @@ public class Kalendar2 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+      /*  initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);

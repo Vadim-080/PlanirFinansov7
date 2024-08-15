@@ -2,11 +2,10 @@ package com.example.planirfinansov6;
 
 import static com.example.planirfinansov6.Kalendar2.APP_PREFERENCES;
 import static com.example.planirfinansov6.Kalendar2.mSettings;
-
 import static com.example.planirfinansov6.Kalendar2.monthPrim;
-import static com.example.planirfinansov6.MainActivity.izmenMount;
 import static com.example.planirfinansov6.MainActivity.KeyPrimMonth;
 import static com.example.planirfinansov6.MainActivity.RassmatrivaemGod;
+import static com.example.planirfinansov6.MainActivity.izmenMount;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,23 +14,14 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.my.target.ads.MyTargetView;
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -49,10 +39,10 @@ public class Primech6 extends AppCompatActivity {
     int poslCifrMount;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
-    private MyTargetView adView; // Рекламный  экземпляр класса
+   /* private MyTargetView adView; // Рекламный  экземпляр класса
     RelativeLayout layout;
     RelativeLayout.LayoutParams adViewLayoutParams;
-    private RewardedAd ad;
+    private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -71,7 +61,7 @@ public class Primech6 extends AppCompatActivity {
         }
         ConstraintLayout.setSystemUiVisibility(newVis);
 
-// VK РЕКЛАМА
+/*// VK РЕКЛАМА
         layout = findViewById(R.id.RelativeLayout);
         adView = new MyTargetView(this);
         // Устанавливаем id слота
@@ -86,13 +76,13 @@ public class Primech6 extends AppCompatActivity {
             public void onLoad(MyTargetView myTargetView) {
                 // Данные успешно загружены, запускаем показ объявлений
                 layout.addView(adView);
-                /*  layout.addView(adView, adViewLayoutParams );*/
+                *//*  layout.addView(adView, adViewLayoutParams );*//*
             }
 
-            /**
+            *//**
              * @param iAdLoadingError
              * @param myTargetView
-             */
+             *//*
             public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
             }
 
@@ -105,7 +95,7 @@ public class Primech6 extends AppCompatActivity {
             }
         });
         // Запускаем загрузку данных
-        adView.load();
+        adView.load();*/
 
         mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE); // Внутри метода onCreate() вы инициализируете переменную  mSettings
         viborShrifta();
@@ -142,11 +132,11 @@ public class Primech6 extends AppCompatActivity {
         }
     }
 
-    @Override  // Остатки VK рекламы баннер
+   /* @Override  // Остатки VK рекламы баннер
     protected void onDestroy() {
         if (adView != null) adView.destroy();
         super.onDestroy();
-    }
+    }*/
 
     public void clickSochranitPrim(View v) {
 
@@ -181,7 +171,7 @@ public class Primech6 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+     /*   initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         PrimMonth = textPrim.getText().toString();
         onPause();
@@ -315,7 +305,7 @@ public class Primech6 extends AppCompatActivity {
         monthPrim = month2;
     }
 
-    // VK реклама ВИДЕО
+  /*  // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -346,6 +336,6 @@ public class Primech6 extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 }
 

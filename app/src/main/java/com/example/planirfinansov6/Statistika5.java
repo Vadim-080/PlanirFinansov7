@@ -16,7 +16,6 @@ import android.view.animation.Animation;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -26,10 +25,6 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -63,7 +58,7 @@ public class Statistika5 extends AppCompatActivity {
     TextView znachenSrednDoxod, nadpMax, nadpMin, maxMonth, minMonth, znachenMax, znachenMin, nadp_sred_dox;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
-    private RewardedAd ad;
+   /* private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -494,8 +489,8 @@ public class Statistika5 extends AppCompatActivity {
     }
 
     public void clickMenu(View v) {
-
-        initAd(); // ВИДЕО РЕКЛАМА VK
+/*
+        initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
@@ -598,7 +593,7 @@ public class Statistika5 extends AppCompatActivity {
                 break;
         }
     }
-    // VK реклама ВИДЕО
+   /* // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -629,6 +624,6 @@ public class Statistika5 extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 }
 

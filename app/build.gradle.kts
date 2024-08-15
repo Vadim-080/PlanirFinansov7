@@ -14,7 +14,7 @@ android {
         minSdk = 30
         targetSdk = 33
         versionCode = 3
-        versionName = "2.1"
+        versionName = "3.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     }
@@ -52,21 +52,28 @@ dependencies {
 
     implementation ("info.hoang8f:fbutton:1.0.5")   // Библиотека разновидностей кнопок
 
-    implementation ("com.google.android.gms:play-services-ads-identifier:18.0.1")
 
-    implementation ("com.my.target:mytarget-sdk:5.20.1")
-
-    implementation ("com.my.target:mytarget-sdk:3.2.0")
-
-    implementation ("com.google.android.exoplayer:exoplayer-core:2.19.1")
+  /*  implementation ("com.google.android.exoplayer:exoplayer-core:2.19.1")
 
     implementation ("com.google.android.exoplayer:exoplayer-hls:2.19.1")
 
-    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")*/   // ВРОДЕ реклама ???
+
+
+
+ /*   implementation ("nl.dionsegijn:konfetti-xml:2.0.4")
+    implementation ("com.github.jinatonic.confetti:confetti:1.1.0")*/   // Библиотека конфети
+
 
     /*implementation ("androidx.viewpager2:viewpager2:1.0.0")  // Библиотека перелистывания*/
 
   /*  implementation ("com.google.android.gms:play-services-ads:23.0.0")*/
+
+
+
+    /* implementation ("com.google.android.gms:play-services-ads-identifier:18.0.1")
+    implementation ("com.my.target:mytarget-sdk:5.20.1")
+   implementation ("com.my.target:mytarget-sdk:3.2.0") */  // Вроде реклама
 
 }
 

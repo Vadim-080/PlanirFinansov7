@@ -48,13 +48,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -85,7 +79,7 @@ public class Vvod3 extends AppCompatActivity {
     EditText vvodDoxodR1, vvodDoxodR2, vvodDoxodR3, vvodDoxodR4, vvodDoxodR5, vvodDoxodP1, vvodDoxodP2, vvodDoxodP3, vvodDoxodP4, vvodDoxodP5;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
-    private RewardedAd ad;
+   /* private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -418,13 +412,13 @@ public class Vvod3 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+      /*  initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }
 
-    // VK реклама ВИДЕО
+   /* // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -455,7 +449,7 @@ public class Vvod3 extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 
     public void clickStatistikaD(View view) {
 

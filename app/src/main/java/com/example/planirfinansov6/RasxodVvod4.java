@@ -41,13 +41,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.my.target.ads.Reward;
-import com.my.target.ads.RewardedAd;
-import com.my.target.common.MyTargetManager;
-import com.my.target.common.models.IAdLoadingError;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -74,7 +68,7 @@ public class RasxodVvod4 extends AppCompatActivity {
     int vvodR1, vvodR2, vvodR3, vvodR4;
 
     androidx.constraintlayout.widget.ConstraintLayout ConstraintLayout;
-    private RewardedAd ad;
+   /* private RewardedAd ad;*/
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -190,13 +184,13 @@ public class RasxodVvod4 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
-        initAd(); // ВИДЕО РЕКЛАМА VK
+       /* initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);
     }
 
-    // VK реклама ВИДЕО
+  /*  // VK реклама ВИДЕО
     private void initAd() {
         // Включение режима отладки
         MyTargetManager.setDebugMode(true);
@@ -227,7 +221,7 @@ public class RasxodVvod4 extends AppCompatActivity {
         });
         // Запускаем загрузку данных
         ad.load();
-    }
+    }*/
 
     public void clickSochranitR(View v) {
 
