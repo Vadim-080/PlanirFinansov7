@@ -19,7 +19,7 @@
         <!--<item name="android:textSize">18dp</item>-->
     </style>
 
-    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+    <style name="CalenderViewDateCustomText1" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">@color/CV32</item>   // цвет чисел
         <item name="android:weekNumberColor">@color/CV14</item>
         <item name="android:textSize">21dp</item>  //  размер чисел
@@ -32,7 +32,22 @@
 
     </style>
 
-    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+
+    <style name="CalenderViewDateCustomText2" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/CV36</item>   // цвет чисел
+        <item name="android:weekNumberColor">@color/CV29</item>
+        <item name="android:textSize">21dp</item>  //  размер чисел
+
+    </style>
+
+    <style name="CalenderViewDateCustomText3" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/CV32</item>   // цвет чисел
+        <item name="android:weekNumberColor">@color/CV12</item>
+        <item name="android:textSize">21dp</item>  //  размер чисел
+
+    </style>
+
+    <style name="CalenderViewWeekCustomText1" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">@color/CV31</item>  // цвет дней недели
         <item name="android:textSize">25dp</item>   //  размер дней недели
       <!--  <item name="android:textStyle">bold</item>-->
@@ -41,15 +56,20 @@
 
     </style>
 
-
-    <style name="CalenderViewCustom." parent="android:TextAppearance.DeviceDefault.Small">
+    <style name="CalenderViewWeekCustomText2" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">@color/CV1</item>  // цвет дней недели
-      <!--  <item name="android:textSize">18dp</item>-->
-
-      <!--  <item name="android:typeface">monospace</item>-->
-
+        <item name="android:textSize">25dp</item>   //  размер дней недели
 
     </style>
+
+    <style name="CalenderViewWeekCustomText3" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/CV1</item>  // цвет дней недели
+        <item name="android:textSize">25dp</item>   //  размер дней недели
+
+    </style>
+
+
+
 
 
 

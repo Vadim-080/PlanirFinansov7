@@ -116,10 +116,7 @@ public class Kalendar2 extends AppCompatActivity {
                 *//*  layout.addView(adView, adViewLayoutParams );*//*
             }
 
-            *//**
-             * @param iAdLoadingError
-             * @param myTargetView
-             *//*
+
             public void onNoAd(@NonNull IAdLoadingError iAdLoadingError, @NonNull MyTargetView myTargetView) {
             }
 
@@ -144,6 +141,52 @@ public class Kalendar2 extends AppCompatActivity {
         nadpisDoxod = (TextView) findViewById(R.id.nadpisDoxod_view);
 
         pokazZaMonth = (TextView) findViewById(R.id.pokazZaMonth_view);
+
+        /*    calendar  =  new CalendarView (this, null, R.style.CalendarViewStyle);*/
+
+       /* calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+
+            @Override
+            public void onSelectedDayChange(CalendarView view, int year,
+                                            int month, int dayOfMonth) {
+                int mYear = year;
+                int mMonth = month;
+                int mDay = dayOfMonth;
+                String selectedDate = new StringBuilder().append(mMonth + 1)
+                        .append("-").append(mDay).append("-").append(mYear)
+                        .append(" ").toString();
+                Toast.makeText(getApplicationContext(), selectedDate, Toast.LENGTH_LONG).show();
+            }
+        });*/
+
+        /*calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle));  // задаем фоновое календаря
+        calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText);  // задаем цвет чисел календаря
+        calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText);   // задаем цвет дней недели календаря*/
+
+
+        byte stileCalend = (byte) (Math.random() * 3); // Случайное число от 0 до 3 -- Для выбора фоновое поле
+        switch (stileCalend) {
+            case 0:
+                calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle1));  // задаем фоновое календаря
+                calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText1);  // задаем цвет чисел календаря
+                calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText1);   // задаем цвет дней недели календаря
+
+                break;
+
+            case 1:
+                calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle2));  // задаем фоновое календаря
+                calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText2);  // задаем цвет чисел календаря
+                calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText2);   // задаем цвет дней недели календаря
+                break;
+
+            case 2:
+                calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle3));  // задаем фоновое календаря
+                calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText3);  // задаем цвет чисел календаря
+                calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText3);   // задаем цвет дней недели календаря
+                break;
+
+        }
+
 
         proverka = false; // обнуляет дату при возврате на главный экран
 
@@ -562,7 +605,7 @@ public class Kalendar2 extends AppCompatActivity {
 
     public void clickMenu(View v) {
 
-      /*  initAd(); // ВИДЕО РЕКЛАМА VK*/
+        /*  initAd(); // ВИДЕО РЕКЛАМА VK*/
 
         Intent intent = new Intent(this, Menu8.class);   // Переход на другой класс
         startActivity(intent);

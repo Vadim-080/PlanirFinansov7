@@ -42,7 +42,19 @@ android {
 dependencies {
 
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
+
+
+
+
+
+
+
+
+
+    implementation("com.google.android.material:material:1.8.0")  // было
+    /*implementation("com.google.android.material:material:1.12.0") */  // для конфети но не идет
+
+
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -61,8 +73,8 @@ dependencies {
 
 
 
- /*   implementation ("nl.dionsegijn:konfetti-xml:2.0.4")
-    implementation ("com.github.jinatonic.confetti:confetti:1.1.0")*/   // Библиотека конфети
+   /* implementation ("nl.dionsegijn:konfetti-xml:2.0.3")*/
+    implementation ("com.github.jinatonic.confetti:confetti:1.1.0")   // Библиотека конфети
 
 
     /*implementation ("androidx.viewpager2:viewpager2:1.0.0")  // Библиотека перелистывания*/
