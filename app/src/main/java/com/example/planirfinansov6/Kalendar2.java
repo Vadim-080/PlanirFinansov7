@@ -170,6 +170,8 @@ public class Kalendar2 extends AppCompatActivity {
                 calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle1));  // задаем фоновое календаря
                 calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText1);  // задаем цвет чисел календаря
                 calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText1);   // задаем цвет дней недели календаря
+                calendar.setAnimation(anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim10)); // анимация появления календаря
+
 
                 break;
 
@@ -177,12 +179,15 @@ public class Kalendar2 extends AppCompatActivity {
                 calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle2));  // задаем фоновое календаря
                 calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText2);  // задаем цвет чисел календаря
                 calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText2);   // задаем цвет дней недели календаря
+                calendar.setAnimation(anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim9)); // анимация появления календаря
+
                 break;
 
             case 2:
                 calendar.setBackground(getResources().getDrawable(R.drawable.kalendstyle3));  // задаем фоновое календаря
                 calendar.setDateTextAppearance(R.style.CalenderViewDateCustomText3);  // задаем цвет чисел календаря
                 calendar.setWeekDayTextAppearance(R.style.CalenderViewWeekCustomText3);   // задаем цвет дней недели календаря
+                calendar.setAnimation(anim = AnimationUtils.loadAnimation(this, R.anim.tv_anim11)); // анимация появления календаря
                 break;
 
         }
